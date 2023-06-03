@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ui.call.AmbulanceCallActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ambulance_call"
+        android:text="@string/ambulance_call"
+        android:fontFamily="@font/gothicextrabold"
+        android:textColor="@color/yellow"
+        android:textSize="37sp"
+        android:layout_marginTop="70dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_confirm"
+        android:text="@string/ambulance_call_confirm"
+        android:fontFamily="@font/gothicmedium"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ambulance_call"/>
+
+    <Button
+        android:id="@+id/btn_ya"
+        android:alpha="1"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gothicsemibold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/ya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confirm" />
+
+    <Button
+        android:id="@+id/btn_no"
+        android:alpha="1"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/gothicsemibold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/red"
+        android:text="@string/no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confirm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
