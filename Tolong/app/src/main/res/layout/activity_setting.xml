@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ui.call.PoliceCallActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_settings"
+        android:text="@string/menu_settings"
+        android:fontFamily="@font/gothicextrabold"
+        android:textColor="@color/yellow"
+        android:textSize="37sp"
+        android:layout_marginTop="70dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/card_tentang_kami"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="70dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_settings"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tentang_kami"
+            android:text="@string/tentang_kami"
+            android:fontFamily="@font/gothicbold"
+            android:layout_gravity="top|center_horizontal"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy"
+            android:layout_gravity="top|center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:paddingTop="60dp"
+            android:paddingStart="15dp"
+            android:lineHeight="20dp"
+            android:paddingEnd="15dp"
+            android:fontFamily="@font/gothicregular"
+            android:textSize="13sp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_lang"
+        android:alpha="1"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="64dp"
+        android:fontFamily="@font/gothicsemibold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_tentang_kami" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:alpha="1"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/gothicsemibold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/red"
+        android:text="@string/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_tentang_kami" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

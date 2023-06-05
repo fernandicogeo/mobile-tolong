@@ -29,4 +29,13 @@
     <string name="dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
     <string name="penanggulangan">Penanggulangan</string>
     <string name="lokasi">Lokasi Anda</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="alamat">Alamat</string>
+    <string name="nohp">Nomor Hp</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save">Simpan</string>
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="language">Bahasa</string>
+    <string name="logout">Logout</string>
+    <string name="small_password">Teks harus berjumlah minimal 8 digit</string>
 </resources>

@@ -13,8 +13,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_register_title"
-            android:text="@string/register"
+            android:id="@+id/tv_edit_profile"
+            android:text="@string/edit_profile"
             android:fontFamily="@font/gothicextrabold"
             android:textColor="@color/yellow"
             android:textSize="37sp"
@@ -39,7 +39,7 @@
             android:fontFamily="@font/gothicregular"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_register_title" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_edit_profile" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etl_name"
@@ -121,7 +121,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_password">
 
-            <com.example.tolong.ui.customview.PasswordEditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_password"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
@@ -129,52 +129,94 @@
                 android:ems="10"
                 android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck" />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/tv_alamat"
+            android:alpha="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_small_password"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/small_password"
+            android:layout_marginTop="24dp"
+            android:text="@string/alamat"
+            android:textSize="17sp"
+            android:fontFamily="@font/gothicregular"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etl_password" />
 
-        <com.example.tolong.ui.customview.RegisterButton
-            android:id="@+id/btn_register"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_alamat"
+            android:alpha="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alamat">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_alamat"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_nohp"
             android:alpha="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/nohp"
+            android:textSize="17sp"
+            android:fontFamily="@font/gothicregular"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etl_alamat" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_nohp"
+            android:alpha="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nohp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nohp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:alpha="1"
+            android:layout_width="128dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
-            android:padding="20dp"
             android:fontFamily="@font/gothicsemibold"
             android:textSize="16sp"
             android:textColor="@color/black"
-            android:text="@string/register"
+            android:backgroundTint="@color/yellow"
+            android:text="@string/save"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_small_password" />
-
-        <TextView
-            android:id="@+id/link_login"
-            android:alpha="1"
-            android:layout_width="0dp"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:text="@string/link_login"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+            app:layout_constraintTop_toBottomOf="@+id/etl_nohp" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -187,5 +229,4 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
