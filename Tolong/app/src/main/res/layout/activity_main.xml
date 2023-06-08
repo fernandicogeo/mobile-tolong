@@ -24,121 +24,134 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="207dp"
-        android:layout_height="231dp"
-        android:id="@+id/card_ambulance"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="10dp"
-        app:cardBackgroundColor="@color/red"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_main_title"
-        >
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:id="@+id/img_ambulance"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:src="@drawable/ambulance"
-            android:contentDescription="@string/app_name" />
-
-        <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="70dp"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints">
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ambulance_call"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="20dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            />
+            android:id="@+id/card_ambulance"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="5dp"
+            app:cardBackgroundColor="@color/red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_main_title"
+            >
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:id="@+id/img_ambulance"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/ambulance"
+                android:contentDescription="@string/app_name" />
 
-    </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ambulance_call"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="207dp"
-        android:layout_height="231dp"
-        android:id="@+id/card_police"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="10dp"
-        app:cardBackgroundColor="@color/yellow"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_main_title"
-        >
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:id="@+id/img_police"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:src="@drawable/police"
-            android:contentDescription="@string/app_name" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/police_call"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="20dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            />
+            android:id="@+id/card_police"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="5dp"
+            app:cardBackgroundColor="@color/yellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_main_title"
+            >
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:id="@+id/img_police"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/police"
+                android:contentDescription="@string/app_name" />
 
-    </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/police_call"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="207dp"
-        android:layout_height="231dp"
-        android:id="@+id/card_firefighter"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="265dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_main_title"
-        >
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:id="@+id/img_firefighter"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/firefighter"
-            android:contentDescription="@string/app_name" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
-        <TextView
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="70dp"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/firefighter_call"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="25dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            />
+            android:id="@+id/card_firefighter"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="225dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_main_title"
+            >
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:id="@+id/img_firefighter"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/firefighter"
+                android:contentDescription="@string/app_name" />
 
-    </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firefighter_call"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="25dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

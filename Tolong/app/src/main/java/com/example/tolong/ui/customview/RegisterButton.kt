@@ -31,6 +31,7 @@ class RegisterButton : AppCompatButton {
         super.onDraw(canvas)
         background = if(isEnabled) enabledBackground else disabledBackground
         setTextColor(txtColor)
+        textSize = 16F
         gravity = Gravity.CENTER
         text = if(isEnabled) "Daftar" else "Belum memenuhi kriteria"
     }

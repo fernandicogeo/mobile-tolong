@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,93 +7,124 @@
     android:background="@color/grey"
     tools:context=".ui.firstaid.FirstAidActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_first_aid"
-        android:text="@string/menu_first_aid"
-        android:fontFamily="@font/gothicextrabold"
-        android:textColor="@color/yellow"
-        android:textSize="37sp"
-        android:layout_marginTop="70dp"
-        android:shadowColor="@color/black"
-        android:shadowDx="5"
-        android:shadowDy="5"
-        android:shadowRadius="10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_tipe_luka"
-        android:text="@string/tipe_luka"
-        android:fontFamily="@font/gothicmedium"
-        android:textColor="@color/white"
-        android:textSize="23sp"
-        android:textAlignment="center"
-        android:layout_margin="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_first_aid"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_result_tipe_luka"
-        android:text="@string/result"
-        android:fontFamily="@font/gothicregular"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        android:textAlignment="center"
-        android:layout_marginTop="15dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        android:lineHeight="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_tipe_luka"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_penanggulangan"
-        android:text="@string/penanggulangan"
-        android:fontFamily="@font/gothicmedium"
-        android:textColor="@color/white"
-        android:textSize="23sp"
-        android:textAlignment="center"
-        android:layout_margin="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_result_tipe_luka"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_result_penanggulangan"
-        android:text="@string/dummy"
-        android:fontFamily="@font/gothicregular"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        android:textAlignment="center"
-        android:layout_marginTop="15dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        android:lineHeight="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_penanggulangan"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_first_aid"
+            android:text="@string/menu_first_aid"
+            android:fontFamily="@font/gothicextrabold"
+            android:textColor="@color/yellow"
+            android:textSize="37sp"
+            android:layout_marginTop="70dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_gambar_luka"
+            android:text="@string/gambar"
+            android:fontFamily="@font/gothicmedium"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_first_aid"/>
+        <ImageView
+            android:id="@+id/iv_gambar_luka"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/gambar"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:transitionName="story_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gambar_luka"
+            tools:srcCompat="@tools:sample/avatars"
+            tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tipe_luka"
+            android:text="@string/tipe_luka"
+            android:fontFamily="@font/gothicmedium"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_gambar_luka"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_result_tipe_luka"
+            android:text="@string/result"
+            android:fontFamily="@font/gothicregular"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:lineHeight="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tipe_luka"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_penanggulangan"
+            android:text="@string/penanggulangan"
+            android:fontFamily="@font/gothicmedium"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_result_tipe_luka"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_result_penanggulangan"
+            android:text="@string/dummy"
+            android:fontFamily="@font/gothicregular"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:lineHeight="25dp"
+            android:paddingBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_penanggulangan"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_result_penanggulangan"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
