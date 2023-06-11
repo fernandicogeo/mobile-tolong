@@ -70,6 +70,9 @@
         android:background="@color/black"
         android:baselineAligned="false"
         app:tabIndicatorGravity="bottom"
+        app:tabSelectedTextColor="@color/yellow"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_result_lokasi"
@@ -81,7 +84,15 @@
         android:layout_height="256dp"
         tools:ignore="MissingConstraints" />
 
-
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

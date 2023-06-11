@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".ui.call.PoliceCallActivity">
+    tools:context=".ui.setting.SettingActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="wrap_content"
         android:id="@+id/card_tentang_kami"
         app:cardElevation="10dp"
         app:cardCornerRadius="20dp"
@@ -39,62 +39,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/tv_settings"
         >
-
-        <TextView
+        <LinearLayout
+            android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_tentang_kami"
-            android:text="@string/tentang_kami"
-            android:fontFamily="@font/gothicbold"
-            android:layout_gravity="top|center_horizontal"
-            android:paddingTop="20dp"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            />
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_tentang_kami"
+                android:text="@string/tentang_kami"
+                android:fontFamily="@font/gothicbold"
+                android:layout_gravity="top|center_horizontal"
+                android:paddingTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dummy"
-            android:layout_gravity="top|center_horizontal"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:paddingTop="60dp"
-            android:paddingStart="15dp"
-            android:lineHeight="20dp"
-            android:paddingEnd="15dp"
-            android:fontFamily="@font/gothicregular"
-            android:textSize="13sp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy"
+                android:layout_gravity="top|center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:lineHeight="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="15dp"
+                android:fontFamily="@font/gothicregular"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/btn_lang"
-        android:alpha="1"
-        android:layout_width="128dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="64dp"
-        android:fontFamily="@font/gothicsemibold"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/yellow"
-        android:text="@string/language"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_tentang_kami" />
+        app:layout_constraintTop_toBottomOf="@+id/card_tentang_kami"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_lang"
+            android:alpha="1"
+            android:layout_width="128dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="64dp"
+            android:fontFamily="@font/gothicsemibold"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/yellow"
+            android:text="@string/language" />
 
-    <Button
-        android:id="@+id/btn_logout"
-        android:alpha="1"
-        android:layout_width="128dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="64dp"
-        android:fontFamily="@font/gothicsemibold"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/red"
-        android:text="@string/logout"
+        <Button
+            android:id="@+id/btn_logout"
+            android:alpha="1"
+            android:layout_width="128dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/gothicsemibold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/red"
+            android:text="@string/logout" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_tentang_kami" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

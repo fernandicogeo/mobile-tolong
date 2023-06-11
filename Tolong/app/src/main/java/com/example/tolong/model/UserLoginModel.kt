@@ -13,5 +13,11 @@ class UserLoginModel (
     val userId: String,
 
     @field:SerializedName("token")
-    val token: String
+    val token: String,
+
+    @field:SerializedName("lon")
+    val lon: Double,
+
+    @field:SerializedName("lat")
+    val lat: Double,
 ) : Parcelable

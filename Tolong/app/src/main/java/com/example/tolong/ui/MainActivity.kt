@@ -6,12 +6,15 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.tolong.R
@@ -28,16 +31,33 @@ import com.example.tolong.ui.profile.ProfileActivity
 import com.example.tolong.ui.setting.SettingActivity
 import com.example.tolong.viewmodel.RegisterViewModel
 import com.example.tolong.viewmodel.ViewModelFactory
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var fusedLocation: FusedLocationProviderClient
+
+    private var lat: Double? = 0.0
+    private var lon: Double? = 0.0
+
+    private val requestPermissionLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.RequestPermission()
+        ) { isGranted: Boolean ->
+            if (isGranted) {
+                getMyLocation()
+            }
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        fusedLocation = LocationServices.getFusedLocationProviderClient(this)
         callActivity()
         bottomNav()
     }
@@ -72,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                     } else startActivity(Intent(this, CameraActivity::class.java))
                 }
                 R.id.nearby -> {
-                    startActivity(Intent(this, NearbyActivity::class.java))
+                    getMyLocation()
                 }
                 R.id.profile -> {
                     startActivity(Intent(this, ProfileActivity::class.java))
@@ -80,6 +100,58 @@ class MainActivity : AppCompatActivity() {
                 R.id.settings -> {
                     startActivity(Intent(this, SettingActivity::class.java))
                 }
+            }
+        }
+    }
+
+    private fun getMyLocation() {
+        if (ContextCompat.checkSelfPermission(
+                this.applicationContext,
+                android.Manifest.permission.ACCESS_FINE_LOCATION
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            fusedLocation.lastLocation.addOnSuccessListener {
+                if (it != null) {
+                    lat = it.latitude
+                    lon = it.longitude
+                    val intentNearby = Intent(this@MainActivity, NearbyActivity::class.java)
+
+                    intentNearby.putExtra(NearbyActivity.EXTRA_LAT, lat)
+                    intentNearby.putExtra(NearbyActivity.EXTRA_LON, lon)
+
+                    Log.d("MainActivity", "Lat: $lat dan Lon: $lon")
+                    startActivity(intentNearby)
+
+                } else {
+                    showDialog("2")
+                }
+            }
+        } else {
+            requestPermissionLauncher.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
+        }
+    }
+
+    private fun showDialog(isSuccess: String) {
+        if (isSuccess == "2") {
+            AlertDialog.Builder(this).apply {
+                setTitle("Lokasi tidak ditemukan!!")
+                setMessage("Silakan coba lagi.")
+                create()
+                show()
+            }
+        } else if (isSuccess == "3") {
+            AlertDialog.Builder(this).apply {
+                setTitle("Upload story gagal!!")
+                setMessage("Silakan coba lagi.")
+                create()
+                show()
+            }
+        } else if (isSuccess == "4") {
+            AlertDialog.Builder(this).apply {
+                setTitle("Permission tidak diberikan!!")
+                setMessage("Anda harus memberikan permission untuk menggunakan fitur ini.")
+                create()
+                show()
             }
         }
     }
