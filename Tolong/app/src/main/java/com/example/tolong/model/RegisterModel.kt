@@ -7,8 +7,8 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class RegisterModel(
     @field:SerializedName("error")
-    val error: Boolean,
+    val error: String,
 
-    @field:SerializedName("message")
+    @field:SerializedName("msg")
     val message: String
 ) : Parcelable

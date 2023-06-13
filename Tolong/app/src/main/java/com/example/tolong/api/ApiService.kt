@@ -5,6 +5,7 @@ import com.example.tolong.model.RegisterModel
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Response
+import retrofit2.http.Body
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -17,18 +18,11 @@ import retrofit2.http.Query
 
 interface ApiService {
     @POST("login")
-    @FormUrlEncoded
-    suspend fun login(
-        @Field("email") email: String,
-        @Field("password") password: String,
-    ) : LoginModel
+    @Headers("Content-Type: application/json")
+    suspend fun login(@Body requestBody: RequestBody) : LoginModel
 
-    @POST("register")
-    @FormUrlEncoded
-    suspend fun register(
-        @Field("name") name: String,
-        @Field("email") email: String,
-        @Field("password") password: String,
-    ) : RegisterModel
+    @POST("users")
+    @Headers("Content-Type: application/json")
+    suspend fun register(@Body requestBody: RequestBody): RegisterModel
 
 }

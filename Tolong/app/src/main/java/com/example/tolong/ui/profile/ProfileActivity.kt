@@ -47,7 +47,7 @@ class ProfileActivity : AppCompatActivity() {
         fusedLocation = LocationServices.getFusedLocationProviderClient(this)
         preference = UserPreference(this)
         binding.tvName.text = preference.getLoginSession().name
-        binding.tvEmail.text = preference.getLoginSession().userId
+        binding.tvEmail.text = preference.getLoginSession().email
 
         bottomNav()
     }
@@ -78,6 +78,7 @@ class ProfileActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.bottomNavigationView.setSelectedItemId(R.id.profile);
     }
 
     private fun getMyLocation() {

@@ -6,12 +6,13 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class LoginModel(
-    @field:SerializedName("loginResult")
-    var loginResult: UserLoginModel? = null,
-
     @field:SerializedName("error")
-    var error: Boolean,
+    var error: String,
 
-    @field:SerializedName("message")
-    var message: String
+    @field:SerializedName("msg")
+    var message: String,
+
+    @field:SerializedName("loginresult")
+    var loginResult: UserLoginModel? = null
+
 ) : Parcelable

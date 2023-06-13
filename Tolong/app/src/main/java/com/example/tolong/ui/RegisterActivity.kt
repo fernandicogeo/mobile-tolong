@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
@@ -40,9 +41,11 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var nameEditText: EditText
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: PasswordEditText
+    private lateinit var confirmPasswordEditText: PasswordEditText
     private lateinit var nameEditTextLayout: TextInputLayout
     private lateinit var emailEditTextLayout: TextInputLayout
     private lateinit var passwordEditTextLayout: TextInputLayout
+    private lateinit var confirmPasswordEditTextLayout: TextInputLayout
     private lateinit var smallPasswordTextView: TextView
     private lateinit var progressBar: ProgressBar
 
@@ -99,6 +102,17 @@ class RegisterActivity : AppCompatActivity() {
             override fun afterTextChanged(p0: Editable?) {
             }
         })
+        confirmPasswordEditText.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                setTextViewEnable()
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+        })
     }
 
     private fun setupAction() {
@@ -107,6 +121,7 @@ class RegisterActivity : AppCompatActivity() {
             val name = nameEditText.text.toString()
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
+            val confPassword = confirmPasswordEditText.text.toString()
             when {
                 name.isEmpty() -> {
                     emailEditTextLayout.error = "Masukkan nama"
@@ -117,26 +132,29 @@ class RegisterActivity : AppCompatActivity() {
                 password.isEmpty() -> {
                     passwordEditTextLayout.error = "Masukkan password"
                 }
+                confPassword.isEmpty() -> {
+                    confirmPasswordEditTextLayout.error = "Masukkan konfirmasi password"
+                }
                 else -> {
-                    signup(name, email, password)
+                    signup(name, email, password, confPassword)
                 }
             }
         }
     }
 
-    private fun signup(userName: String, userEmail: String, userPassword: String) {
-        signupViewModel.signup(userName, userEmail, userPassword).observe(this) {
+    private fun signup(userName: String, userEmail: String, userPassword: String, userConfPassword: String) {
+        signupViewModel.signup(userName, userEmail, userPassword, userConfPassword).observe(this) {
             if (it != null) {
                 when (it) {
                     is ResultCondition.LoadingState -> {
                         showLoading(true)
                     } is ResultCondition.ErrorState -> {
-                    showLoading(false)
-                    showDialog(false)
-                } is ResultCondition.SuccessState -> {
-                    showLoading(false)
-                    showDialog(true)
-                }
+                        showLoading(false)
+                        showDialog(false)
+                    } is ResultCondition.SuccessState -> {
+                        showLoading(false)
+                        showDialog(true)
+                    }
                 }
             }
         }
@@ -190,16 +208,17 @@ class RegisterActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.et_name)
         emailEditText = findViewById(R.id.et_email)
         passwordEditText = findViewById(R.id.et_password)
+        confirmPasswordEditText = findViewById(R.id.et_confirm)
         nameEditTextLayout = findViewById(R.id.etl_name)
         emailEditTextLayout = findViewById(R.id.etl_email)
         passwordEditTextLayout = findViewById(R.id.etl_password)
-        smallPasswordTextView = findViewById(R.id.tv_small_password)
+        confirmPasswordEditTextLayout = findViewById(R.id.etl_confirm)
         progressBar = findViewById(R.id.progressBar)
     }
 
     private fun setTextViewEnable() {
         val resultPassword = passwordEditText.text
         signupButton.isEnabled = nameEditText.text.isNotEmpty() == true && emailEditText.text.isNotEmpty() == true && resultPassword.toString().length >= 8
-        smallPasswordTextView.alpha = if (resultPassword.toString().isEmpty() || resultPassword.toString().length >= 8) 0F else 1F
+//        smallPasswordTextView.alpha = if (resultPassword.toString().isEmpty() || resultPassword.toString().length >= 8) 0F else 1F
     }
 }

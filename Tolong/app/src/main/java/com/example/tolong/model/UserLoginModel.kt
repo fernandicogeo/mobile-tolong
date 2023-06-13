@@ -9,15 +9,9 @@ class UserLoginModel (
     @field:SerializedName("name")
     val name: String,
 
-    @field:SerializedName("userId")
-    val userId: String,
+    @field:SerializedName("email")
+    val email: String,
 
-    @field:SerializedName("token")
+    @field:SerializedName("accessToken")
     val token: String,
-
-    @field:SerializedName("lon")
-    val lon: Double,
-
-    @field:SerializedName("lat")
-    val lat: Double,
 ) : Parcelable

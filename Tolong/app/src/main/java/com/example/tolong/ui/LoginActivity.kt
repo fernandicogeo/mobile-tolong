@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.view.WindowInsets
@@ -83,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun isLoginSession() {
-        if (preference.getLoginSession().name != null && preference.getLoginSession().userId != null && preference.getLoginSession().token != null)
+        if (preference.getLoginSession().name != null && preference.getLoginSession().email != null && preference.getLoginSession().token != null)
             startActivity(Intent(this, MainActivity::class.java))
     }
 
@@ -114,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
     private fun saveLoginSession(login: LoginModel) {
         val loginPref = UserPreference(this)
         val loginResult = login.loginResult
-        val user = UserModel(name = loginResult?.name, userId = loginResult?.userId, token = loginResult?.token)
+        val user = UserModel(name = loginResult?.name, email = loginResult?.email, token = loginResult?.token)
         loginPref.saveLoginSession(user)
     }
 
