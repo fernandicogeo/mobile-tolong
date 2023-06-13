@@ -23,7 +23,7 @@ class Repository(private val pref: UserPreference, private val apiService: ApiSe
 
             val response = apiService.login(requestBody)
             if (response.error.toBoolean()) {
-                emit(ResultCondition.ErrorState(response.message))
+                emit(ResultCondition.ErrorState(response.msg))
             } else {
                 emit(ResultCondition.SuccessState(response))
             }
@@ -41,7 +41,7 @@ class Repository(private val pref: UserPreference, private val apiService: ApiSe
 
             val response = apiService.register(requestBody)
             if (response.error.toBoolean()) {
-                emit(ResultCondition.ErrorState(response.message))
+                emit(ResultCondition.ErrorState(response.msg))
             } else {
                 emit(ResultCondition.SuccessState(response))
             }

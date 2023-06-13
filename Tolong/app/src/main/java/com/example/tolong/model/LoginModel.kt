@@ -10,9 +10,9 @@ data class LoginModel(
     var error: String,
 
     @field:SerializedName("msg")
-    var message: String,
+    var msg: String,
 
     @field:SerializedName("loginresult")
-    var loginResult: UserLoginModel? = null
+    var loginresult: UserLoginModel? = null
 
 ) : Parcelable

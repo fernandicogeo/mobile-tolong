@@ -71,20 +71,20 @@ class LoginActivity : AppCompatActivity() {
                     is ResultCondition.LoadingState -> {
                         showLoading(true)
                     } is ResultCondition.ErrorState -> {
-                    showLoading(false)
-                    showDialog(false)
-                } is ResultCondition.SuccessState -> {
-                    showLoading(false)
-                    saveLoginSession(it.data)
-                    showDialog(true)
-                }
+                        showLoading(false)
+                        showDialog(false)
+                    } is ResultCondition.SuccessState -> {
+                        showLoading(false)
+                        saveLoginSession(it.data)
+                        showDialog(true)
+                    }
                 }
             }
         }
     }
 
     private fun isLoginSession() {
-        if (preference.getLoginSession().name != null && preference.getLoginSession().email != null && preference.getLoginSession().token != null)
+        if (preference.getLoginSession().name != null && preference.getLoginSession().email != null && preference.getLoginSession().accessToken != null)
             startActivity(Intent(this, MainActivity::class.java))
     }
 
@@ -114,8 +114,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun saveLoginSession(login: LoginModel) {
         val loginPref = UserPreference(this)
-        val loginResult = login.loginResult
-        val user = UserModel(name = loginResult?.name, email = loginResult?.email, token = loginResult?.token)
+        val loginResult = login.loginresult
+        val user = UserModel(name = loginResult?.name, email = loginResult?.email, accessToken = loginResult?.accessToken)
         loginPref.saveLoginSession(user)
     }
 

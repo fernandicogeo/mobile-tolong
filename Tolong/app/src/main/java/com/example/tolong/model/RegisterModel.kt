@@ -10,5 +10,5 @@ data class RegisterModel(
     val error: String,
 
     @field:SerializedName("msg")
-    val message: String
+    val msg: String
 ) : Parcelable

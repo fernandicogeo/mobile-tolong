@@ -17,6 +17,7 @@ import com.example.tolong.databinding.ActivityMainBinding
 import com.example.tolong.databinding.ActivityProfileBinding
 import com.example.tolong.preferences.UserPreference
 import com.example.tolong.ui.MainActivity
+import com.example.tolong.ui.call.AmbulanceCallActivity
 import com.example.tolong.ui.firstaid.CameraActivity
 import com.example.tolong.ui.nearby.NearbyActivity
 import com.example.tolong.ui.setting.SettingActivity
@@ -49,6 +50,10 @@ class ProfileActivity : AppCompatActivity() {
         binding.tvName.text = preference.getLoginSession().name
         binding.tvEmail.text = preference.getLoginSession().email
 
+        binding.btnEdit.setOnClickListener {
+            startActivity(Intent(this, EditProfileActivity::class.java))
+        }
+
         bottomNav()
     }
 
@@ -78,7 +83,7 @@ class ProfileActivity : AppCompatActivity() {
                 }
             }
         }
-        binding.bottomNavigationView.setSelectedItemId(R.id.profile);
+        binding.bottomNavigationView.setSelectedItemId(R.id.profile)
     }
 
     private fun getMyLocation() {

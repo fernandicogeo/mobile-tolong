@@ -11,16 +11,16 @@ class UserPreference(context: Context) {
         val prefEdit = pref.edit()
         prefEdit.putString(USER_NAME, user.name)
         prefEdit.putString(USER_EMAIL, user.email)
-        prefEdit.putString(USER_TOKEN, user.token)
+        prefEdit.putString(USER_TOKEN, user.accessToken)
         prefEdit.apply()
     }
 
     fun getLoginSession() : UserModel {
         val name = pref.getString(USER_NAME, null)
         val email = pref.getString(USER_EMAIL, null)
-        val token = pref.getString(USER_TOKEN, null)
+        val accessToken = pref.getString(USER_TOKEN, null)
 
-        return UserModel(name, email, token)
+        return UserModel(name, email, accessToken)
     }
 
     fun clearLoginSession() {

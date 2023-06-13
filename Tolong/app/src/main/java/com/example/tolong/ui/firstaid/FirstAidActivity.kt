@@ -92,6 +92,7 @@ class FirstAidActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.bottomNavigationView.setSelectedItemId(R.id.first_aid)
     }
 
     private fun getMyLocation() {

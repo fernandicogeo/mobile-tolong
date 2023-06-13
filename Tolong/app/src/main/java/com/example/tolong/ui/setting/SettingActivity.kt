@@ -80,6 +80,7 @@ class SettingActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.bottomNavigationView.setSelectedItemId(R.id.settings)
     }
 
     private fun getMyLocation() {
