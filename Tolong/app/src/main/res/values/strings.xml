@@ -46,4 +46,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_address">Jl. Mayor Rusdi 2 No.2981</string>
     <string name="dummy_nohp">0893183930</string>
+    <string name="click">Klik untuk menelfon</string>
 </resources>

@@ -9,20 +9,28 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Observer
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tolong.R
 import com.example.tolong.databinding.ActivityNearbyBinding
 import com.example.tolong.helper.parseAddressLocation
 import com.example.tolong.helper.parseAddressProvince
 import com.example.tolong.helper.readJsonFromAssets
+import com.example.tolong.model.SearchModel
+import com.example.tolong.repository.ResultCondition
 import com.example.tolong.ui.MainActivity
 import com.example.tolong.ui.firstaid.CameraActivity
 import com.example.tolong.ui.profile.ProfileActivity
 import com.example.tolong.ui.setting.SettingActivity
+import com.example.tolong.viewmodel.LoginViewModel
+import com.example.tolong.viewmodel.NearbyViewModel
+import com.example.tolong.viewmodel.ViewModelFactoryAuth
+import com.example.tolong.viewmodel.ViewModelFactoryNearby
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.material.tabs.TabLayout
@@ -30,7 +38,10 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class NearbyActivity : AppCompatActivity() {
 
+    private val nearbyViewModel: NearbyViewModel by viewModels { factory }
+    private lateinit var factory: ViewModelFactoryNearby
     private lateinit var binding: ActivityNearbyBinding
+    private val sectionsPagerAdapter = SectionPagerAdapter(this)
     private lateinit var fusedLocation: FusedLocationProviderClient
 
     private var lat: Double? = 0.0
@@ -50,6 +61,8 @@ class NearbyActivity : AppCompatActivity() {
         binding = ActivityNearbyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        factory = ViewModelFactoryNearby.getInstanceNearby(binding.root.context)
+
         val lat = intent.getDoubleExtra(EXTRA_LAT, 0.0)
         val lon = intent.getDoubleExtra(EXTRA_LON, 0.0)
         fusedLocation = LocationServices.getFusedLocationProviderClient(this)
@@ -59,6 +72,7 @@ class NearbyActivity : AppCompatActivity() {
             parseAddressLocation(this, lat, lon)
 
         val province = parseAddressProvince(this, lat, lon)
+        getData(province)
         bottomNav()
         sectionPage()
     }
@@ -137,16 +151,22 @@ class NearbyActivity : AppCompatActivity() {
         }
     }
 
-    private fun getAmbulance(province: String) {
-        if (province == "Sumatera Selatan") {
-            val jsonObject = readJsonFromAssets(this, "data.json")
-            if (jsonObject != null) {
-                // Lakukan operasi dengan objek JSON di sini
-                val name = jsonObject.getString("name")
-                val age = jsonObject.getInt("age")
-                // ...
+    private fun getData(province: String) {
+        val searchResultObserver = Observer<ResultCondition<SearchModel>> { result ->
+            when (result) {
+                is ResultCondition.SuccessState -> {
+                    val searchModel = result.data
+                    val ambulanceData = searchModel.ambulance
+                    val policeData = searchModel.police
+                    val firefighterData = searchModel.fireDep
+                    sectionsPagerAdapter.ambulance = ambulanceData
+                    sectionsPagerAdapter.police = policeData
+                    sectionsPagerAdapter.firefighter = firefighterData
+                }
+                else -> {}
             }
         }
+        nearbyViewModel.search(province).observe(this, searchResultObserver)
     }
 
     fun bottomNav() {
@@ -179,7 +199,6 @@ class NearbyActivity : AppCompatActivity() {
     }
 
     private fun sectionPage() {
-        val sectionsPagerAdapter = SectionPagerAdapter(this)
         val viewPager: ViewPager2 = findViewById(R.id.view_pager)
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = findViewById(R.id.tabs)

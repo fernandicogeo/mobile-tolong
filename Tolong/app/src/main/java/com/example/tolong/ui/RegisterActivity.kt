@@ -1,14 +1,11 @@
 package com.example.tolong.ui
 
-import android.animation.AnimatorSet
-import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
@@ -24,13 +21,13 @@ import com.example.tolong.ui.customview.NameEditText
 import com.example.tolong.ui.customview.PasswordEditText
 import com.example.tolong.ui.customview.RegisterButton
 import com.example.tolong.viewmodel.RegisterViewModel
-import com.example.tolong.viewmodel.ViewModelFactory
+import com.example.tolong.viewmodel.ViewModelFactoryAuth
 import com.google.android.material.textfield.TextInputLayout
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private val signupViewModel: RegisterViewModel by viewModels { factory }
-    private lateinit var factory: ViewModelFactory
+    private lateinit var factory: ViewModelFactoryAuth
 
     private lateinit var titleTextView: TextView
     private lateinit var nameTextView: TextView
@@ -55,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         binding = ActivityRegisterBinding.inflate(layoutInflater)
-        factory = ViewModelFactory.getInstance(binding.root.context)
+        factory = ViewModelFactoryAuth.getInstanceAuth(binding.root.context)
 
         setupView()
         setupAction()

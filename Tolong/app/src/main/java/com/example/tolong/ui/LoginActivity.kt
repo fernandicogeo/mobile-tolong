@@ -4,26 +4,24 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
-import com.example.tolong.R
 import com.example.tolong.databinding.ActivityLoginBinding
 import com.example.tolong.model.LoginModel
 import com.example.tolong.model.UserModel
 import com.example.tolong.preferences.UserPreference
 import com.example.tolong.repository.ResultCondition
 import com.example.tolong.viewmodel.LoginViewModel
-import com.example.tolong.viewmodel.ViewModelFactory
+import com.example.tolong.viewmodel.ViewModelFactoryAuth
 import kotlin.system.exitProcess
 
 class LoginActivity : AppCompatActivity() {
     private val loginViewModel: LoginViewModel by viewModels { factory }
-    private lateinit var factory: ViewModelFactory
+    private lateinit var factory: ViewModelFactoryAuth
     private lateinit var preference: UserPreference
     private lateinit var binding: ActivityLoginBinding
 
@@ -32,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        factory = ViewModelFactory.getInstance(binding.root.context)
+        factory = ViewModelFactoryAuth.getInstanceAuth(binding.root.context)
         preference = UserPreference(this)
 
         setupView()

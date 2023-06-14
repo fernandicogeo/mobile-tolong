@@ -36,6 +36,7 @@ class UserPreference(context: Context) {
         private const val USER_NAME = "user_name"
         private const val USER_EMAIL = "user_email"
         private const val USER_TOKEN = "user_token"
+
         private const val USER_PREF = "user_pref"
     }
 }

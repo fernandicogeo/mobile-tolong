@@ -9,7 +9,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.tolong.R
 import com.example.tolong.databinding.ActivityFirstAidBinding
@@ -18,7 +17,7 @@ import com.example.tolong.ui.MainActivity
 import com.example.tolong.ui.nearby.NearbyActivity
 import com.example.tolong.ui.profile.ProfileActivity
 import com.example.tolong.ui.setting.SettingActivity
-import com.example.tolong.viewmodel.ViewModelFactory
+import com.example.tolong.viewmodel.ViewModelFactoryAuth
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import java.io.ByteArrayOutputStream
@@ -26,7 +25,7 @@ import java.io.File
 import java.io.FileOutputStream
 
 class FirstAidActivity : AppCompatActivity() {
-    private lateinit var factory: ViewModelFactory
+    private lateinit var factory: ViewModelFactoryAuth
     private lateinit var binding: ActivityFirstAidBinding
     private lateinit var fusedLocation: FusedLocationProviderClient
 

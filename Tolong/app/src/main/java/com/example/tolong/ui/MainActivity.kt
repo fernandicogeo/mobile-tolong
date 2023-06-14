@@ -8,33 +8,22 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
-import android.widget.EditText
-import android.widget.ProgressBar
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.tolong.R
-import com.example.tolong.databinding.ActivityLoginBinding
 import com.example.tolong.databinding.ActivityMainBinding
-import com.example.tolong.databinding.ActivityRegisterBinding
 import com.example.tolong.ui.call.AmbulanceCallActivity
 import com.example.tolong.ui.call.FirefighterCallActivity
 import com.example.tolong.ui.call.PoliceCallActivity
 import com.example.tolong.ui.firstaid.CameraActivity
-import com.example.tolong.ui.firstaid.FirstAidActivity
 import com.example.tolong.ui.nearby.NearbyActivity
 import com.example.tolong.ui.profile.ProfileActivity
 import com.example.tolong.ui.setting.SettingActivity
-import com.example.tolong.viewmodel.RegisterViewModel
-import com.example.tolong.viewmodel.ViewModelFactory
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
 
