@@ -8,8 +8,10 @@ import android.graphics.Matrix
 import android.location.Geocoder
 import android.net.Uri
 import android.os.Environment
+import org.json.JSONObject
 import java.io.File
 import java.io.FileOutputStream
+import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
 import java.text.SimpleDateFormat
@@ -92,5 +94,30 @@ fun parseAddressLocation(
     } else {
         "📌 Location Unknown"
     }
+}
+fun parseAddressProvince(
+    context: Context,
+    lat: Double,
+    lon: Double
+): String {
+    val geocoder = Geocoder(context)
+    val geoLocation = geocoder.getFromLocation(lat, lon, 1)
+    return if (geoLocation!!.size > 0) {
+        val address = geoLocation[0]
+        val province = address.adminArea
+        province ?: "Province Unknown"
+    } else {
+        "Province Unknown"
+    }
+}
 
+fun readJsonFromAssets(context: Context, fileName: String): JSONObject? {
+    val jsonString: String?
+    try {
+        jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
+        return JSONObject(jsonString)
+    } catch (ioException: IOException) {
+        ioException.printStackTrace()
+    }
+    return null
 }

@@ -1,0 +1,30 @@
+{
+    "1": {
+        "No": "1",
+        "name_place": "RSUD Siti Fatimah Az-Zahra Provinsi Sumatera Selatan",
+        "location(cordinat)": "Jl. Kol. H. Burlian, Suka Bangun, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30151",
+        "city": "Palembang",
+        "call_number": "(0711) 5718883"
+    },
+    "2": {
+        "No": "2",
+        "name_place": "RSUD Talang Ubi",
+        "location(cordinat)": "PRCC+Q7C, Jl. Taman Siswa, Ps. Bhayangkara, Kec. Talang Ubi, Kab. Penukal Abab Lematang Ilir, Sumatera Selatan 31211",
+        "city": "Penukal Abab Lematang Ilir",
+        "call_number": "(0713) 3922442"
+    },
+    "3": {
+        "No": "3",
+        "name_place": "Rumah Sakit St. Antonio",
+        "location(cordinat)": "No. 3 Km. 3, Jalan. Garuda, Tj. Baru, Kec. Baturaja Timur, Kabupaten Ogan Komering Ulu, Sumatera Selatan 32121",
+        "city": "Ogan Komering Ulu",
+        "call_number": "(0735) 320395"
+    },
+    "4": {
+        "No": "4",
+        "name_place": "Rumah Sakit Islam Ar-Rasyid Palembang",
+        "location(cordinat)": "Jl. HM. Saleh No.2, Sukarami, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30961",
+        "city": "Palembang",
+        "call_number": "(0711) 5610503"
+    }
+}

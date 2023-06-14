@@ -1,0 +1,104 @@
+{
+    "1": {
+        "No": "1",
+        "location(coordinat)": "Jl. Sukabumi No.17, Kacapiring, Kec. Batununggal, Kota Bandung, Jawa Barat 40271",
+        "city": "Dinas Kebakaran Dan Penanggulangan Bencana - Kota Bandung",
+        "call_number": "(022) 7207113"
+    },
+    "2": {
+        "No": "2",
+        "location(coordinat)": "4FRM+GFR, Kertajaya, Kec. Padalarang, Kabupaten Bandung Barat, Jawa Barat 40553",
+        "city": "Pemadam Kebakaran Kab. Bandung Barat",
+        "call_number": "(022) 87782113"
+    },
+    "3": {
+        "No": "3",
+        "location(coordinat)": "Jl. Raya Teuku Umar No.1, Gandasari, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17530",
+        "city": "Kantor DINAS DAMKAR KABUPATEN BEKASI",
+        "call_number": "(021) 22162577"
+    },
+    "4": {
+        "No": "4",
+        "location(coordinat)": "Jl. KH. R. Abdullah Bin Nuh No.1, RT.03/RW.01, Curugmekar, Kec. Bogor Bar., Kota Bogor, Jawa Barat 16113",
+        "city": "DINAS PEMADAM KEBAKARAN KOTA BOGOR POSKO DAMKAR YASMIN KOTA BOGOR",
+        "call_number": "0851-0026-7815"
+    },
+    "5": {
+        "No": "5",
+        "location(coordinat)": "Komplek, Jl. Raya Pemda Jl. Tegar Beriman No.1, Pakansari, Kec. Cibinong, Kabupaten Bogor, Jawa Barat 16914",
+        "city": "Dinas Pemadam Kebakaran Kab. Bogor",
+        "call_number": "(021) 8753547"
+    },
+    "6": {
+        "No": "6",
+        "location(coordinat)": "P44Q+7G8, Wangunharja, Kec. Cikarang Utara, Kabupaten Bekasi, Jawa Barat 17530",
+        "city": "Damkar Jababeka",
+        "call_number": "(021) 8934900"
+    },
+    "7": {
+        "No": "7",
+        "location(coordinat)": "Jl. Sukabumi No.17, Kacapiring, Kec. Batununggal, Kota Bandung, Jawa Barat 40271",
+        "city": "Kantor Pemadam Kebakaran kota Bandung",
+        "call_number": "(022) 7207113"
+    },
+    "8": {
+        "No": "8",
+        "location(coordinat)": "Jl. Terusan Pemuda No.6, Sunyaragi, Kec. Kesambi, Kota Cirebon, Jawa Barat 45124",
+        "city": "Dinas Pemadam Kebakaran Kota Cirebon",
+        "call_number": "(0231) 484113"
+    },
+    "9": {
+        "No": "9",
+        "location(coordinat)": "Jl. Raya Pangkalan No.5, Ciptasari, Kec. Pangkalan, Karawang, Jawa Barat 41362",
+        "city": "POS DAMKAR TEGAL WARU , PANGKALAN",
+        "call_number": "(0267) 6488113"
+    },
+    "10": {
+        "No": "10",
+        "location(coordinat)": "542J+9QV, Jl. Perintis Kemerdekaan, Sirnagalih, Kec. Cilaku, Kabupaten Cianjur, Jawa Barat 43285",
+        "city": "PEMADAM KEBAKARAN CIANJUR",
+        "call_number": "(0263) 281392"
+    },
+    "11": {
+        "No": "11",
+        "location(coordinat)": "3RW2+FPC, Tanjungsari, Kec. Tanjungsari, Kabupaten Sumedang, Jawa Barat 45362",
+        "city": "Damkar Tanjungsari",
+        "call_number": "(022) 7911113"
+    },
+    "12": {
+        "No": "12",
+        "location(coordinat)": "Jalan Raya Soreang Kopo KM.17, Pamekaran, Soreang, Pamekaran, Kec. Soreang, Kabupaten Bandung, Jawa Barat 40912",
+        "city": "Dinas Pemadam Kebakaran dan Penyelamatan Kabupaten Bandung",
+        "call_number": "(022) 5891113"
+    },
+    "13": {
+        "No": "13",
+        "location(coordinat)": "3VRW+M5X, Kompleks gelanggang, Sukamanah, Kec. Cisaat, Kabupaten Sukabumi, Jawa Barat 43152",
+        "city": "Damkar Cisaat",
+        "call_number": "(0266) 222626"
+    },
+    "14": {
+        "No": "14",
+        "location(coordinat)": "Jalan Ki Hajar Dewantara No. 1, Karangasih, Cikarang Utara, Karangasih, Bekasi, Kabupaten Bekasi, Jawa Barat 17530",
+        "city": "Pos Pemadam Kebakaran pilar",
+        "call_number": "(021) 89239900"
+    },
+    "15": {
+        "No": "15",
+        "location(coordinat)": "Jl. Raya Pajajaran No.01 raya, RT.07/RW.02, Sukasari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16142",
+        "city": "Dinas pemadam kebakaran kota bogor",
+        "call_number": "(0251) 8322100"
+    },
+    "16": {
+        "No": "16",
+        "location(coordinat)": "Jl. Raya Muchtar No.30, Sawangan Lama, Kec. Bojongsari, Kota Depok, Jawa Barat 16517",
+        "city": "Kantor Pemadam Kebakaran Bojongsari",
+        "call_number": "(0251) 8604113"
+    },
+    "17": {
+        "No": "17",
+        "location(coordinat)": "Jl. Jend. Ahmad Yani No.113, Cipaisan, Kec. Purwakarta, Kabupaten Purwakarta, Jawa Barat 41113",
+        "city": "Pemadam Kebakaran Purwakarta",
+        "call_number": "(0264) 8225113"
+    }
+}

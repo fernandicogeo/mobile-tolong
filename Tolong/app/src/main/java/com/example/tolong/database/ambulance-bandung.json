@@ -1,0 +1,163 @@
+{
+    "1": {
+        "No": "1",
+        "name_place": "RSUD Ujung Berung Kota Bandung (Pemkot Bandung)",
+        "location(cordinat)": "Jl. Rumah Sakit No.22 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 7800017"
+    },
+    "2": {
+        "No": "2",
+        "name_place": "RSUP Hasan Sadikin (Kemenkes RI)",
+        "location(cordinat)": "Jl. Pasteur No.38 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 2034953"
+    },
+    "3": {
+        "No": "3",
+        "name_place": "RS Mata Cicendo (Kementrian Kesehatan)",
+        "location(cordinat)": "Jl. Cicendo No.4 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4231280"
+    },
+    "4": {
+        "No": "4",
+        "name_place": "RSU Dr. Salamun (Jankes TNI AU)",
+        "location(cordinat)": "Jl. Ciumbuleuit No.203 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 2032090"
+    },
+    "5": {
+        "No": "5",
+        "name_place": "RSU Sartika Asih (Mabes Polri)",
+        "location(cordinat)": "Jl. Moh Toha No.369 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 5229544"
+    },
+    "6": {
+        "No": "6",
+        "name_place": "RSU Sariningsih (Kesdam III/Siliwangi)",
+        "location(cordinat)": "Jl. RE Martadinata No.9 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4204250"
+    },
+    "7": {
+        "No": "7",
+        "name_place": "RS Pindad (PT Pindad)",
+        "location(cordinat)": "Jl. Gatot Soebroto No.517 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 7327964"
+    },
+    "8": {
+        "No": "8",
+        "name_place": "RSU Kebonjati (Yayasan Kawaluyaan)",
+        "location(cordinat)": "Jl. Kebonjati No. 152 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4231280"
+    },
+    "9": {
+        "No": "9",
+        "name_place": "RSU Advent (Yayasan RS Advent)",
+        "location(cordinat)": "Jl. Cihampelas No. 161 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 2034386"
+    },
+    "10": {
+        "No": "10",
+        "name_place": "RSU St. Borromeus (Perhimpunan St Baromeus)",
+        "location(cordinat)": "Jl. Ir. H.Juanda No.100 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 2504041"
+    },
+    "11": {
+        "No": "11",
+        "name_place": "RSU Santo Yusuf (Perhimpunan St Baromeus)",
+        "location(cordinat)": "Jl. Cikutra No.7 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 7208172"
+    },
+    "12": {
+        "No": "12",
+        "name_place": "RSU Bungsu (Yayasan Bela Keselamatan)",
+        "location(cordinat)": "Jl. Veteran No. 20 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4230550"
+    },
+    "13": {
+        "No": "13",
+        "name_place": "RSU Muhammadiyah (Perhimpunan Muhammadiyah)",
+        "location(cordinat)": "Jl. K.H. Ahmad Dahlan No.53 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 7301062"
+    },
+    "14": {
+        "No": "14",
+        "name_place": "RSU Immanuel (Badan RS GKP)",
+        "location(cordinat)": "Jl. Kopo No.161 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 5201656"
+    },
+    "15": {
+        "No": "15",
+        "name_place": "RSU AlIslam (Yayasan Rs Islam KSWI Jabar)",
+        "location(cordinat)": "Jl. Soekarno Hatta No.664 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 7565588"
+    },
+    "16": {
+        "No": "16",
+        "name_place": "RSKIA Limijati (Yayasan Limijati)",
+        "location(cordinat)": "Jl. RE Martadinata No.39 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4207770"
+    },
+    "17": {
+        "No": "17",
+        "name_place": "RSB Emma Poeradiredja (Yayasan Kesehatan)",
+        "location(cordinat)": "Jl. Sumatera No.4648 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4205437"
+    },
+    "18": {
+        "No": "18",
+        "name_place": "RSIA Sukajadi (Yayasan Kesejahteraan)",
+        "location(cordinat)": "Jl. Sukajadi No.149 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 2032942"
+    },
+    "19": {
+        "No": "19",
+        "name_place": "RSK Ginjal Habibie (Pembinaan dan Asuhan Anak)",
+        "location(cordinat)": "Jl. Tubagus Ismail No.48 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 2501985"
+    },
+    "20": {
+        "No": "20",
+        "name_place": "RSK Bedah Halmahera Siaga (Yayasan Pengabdian)",
+        "location(cordinat)": "Jl. RE Martadinata No.28 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4206061"
+    },
+    "21": {
+        "No": "21",
+        "name_place": "RSKIA Hermina Pasteur (PT. Medikaloka Pasteur)",
+        "location(cordinat)": "Jl. Dr. Djundjunan No.107 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 6072525"
+    },
+    "22": {
+        "No": "22",
+        "name_place": "RSB Melinda (CV Melinda Kasih Ibu)",
+        "location(cordinat)": "Jl. Padjajaran No.46 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4266700"
+    },
+    "23": {
+        "No": "23",
+        "name_place": "RSK Gigi dan Mulut Kota Bandung",
+        "location(cordinat)": "Jl. RE Martadinata No.45 Bandung",
+        "city": "Bandung",
+        "call_number": "(022) 4234058"
+    }
+}

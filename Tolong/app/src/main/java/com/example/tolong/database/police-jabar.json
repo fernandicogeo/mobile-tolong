@@ -1,0 +1,302 @@
+{
+    "1": {
+        "No": "1",
+        "location(coordinat)": "H7JM+72J, Jl. Raya Salopa, Cinunjang, Kec. Gunungtanjung, Kabupaten Tasikmalaya, Jawa Barat 46418",
+        "city": "POLSEK GUNUNGTANJUNG",
+        "call_number": "(0265) 239 0225"
+    },
+    "2": {
+        "No": "2",
+        "location(coordinat)": "Jl. Syekh Abdul Muhyi No.42, Gununggede, Kec. Kawalu, Kab. Tasikmalaya, Jawa Barat 46182",
+        "city": "POLSEK KAWALU",
+        "call_number": "(0265) 320 011"
+    },
+    "3": {
+        "No": "3",
+        "location(coordinat)": "M66H+62P, Cikalang, Tawang, Tasikmalaya Regency, West Java 46114",
+        "city": "POLSEK TAWANG",
+        "call_number": "(0265) 313 330"
+    },
+    "4": {
+        "No": "4",
+        "location(coordinat)": "M692+RW3, Jl. Pertanian, Cilembang, Kec. Cihideung, Kab. Tasikmalaya, Jawa Barat 46123",
+        "city": "POLSEK CIHIDEUNG",
+        "call_number": "(0265) 311 917"
+    },
+    "5": {
+        "No": "5",
+        "location(coordinat)": "",
+        "city": "POLSEK CINEAM",
+        "call_number": "(0265) 380 607"
+    },
+    "6": {
+        "No": "6",
+        "location(coordinat)": "",
+        "city": "POLSEK MANONJAYA",
+        "call_number": "(0265) 380 151"
+    },
+    "7": {
+        "No": "7",
+        "location(coordinat)": "",
+        "city": "POLSEK CIBEUREUM",
+        "call_number": "(0265) 323 262"
+    },
+    "8": {
+        "No": "8",
+        "location(coordinat)": "",
+        "city": "POLSEK INDIHIANG",
+        "call_number": "(0265) 331 364"
+    },
+    "9": {
+        "No": "9",
+        "location(coordinat)": "",
+        "city": "POLSEK CISAYONG",
+        "call_number": "(0265) 421 666"
+    },
+    "10": {
+        "No": "10",
+        "location(coordinat)": "",
+        "city": "POLSEK RAJAPOLAH",
+        "call_number": "(0265) 420 110"
+    },
+    "11": {
+        "No": "11",
+        "location(coordinat)": "",
+        "city": "POLSEK JAMANIS",
+        "call_number": "(0265) 452 371"
+    },
+    "12": {
+        "No": "12",
+        "location(coordinat)": "",
+        "city": "POLSEK PAGERAGEUNG",
+        "call_number": "(0265) 455 959"
+    },
+    "13": {
+        "No": "13",
+        "location(coordinat)": "",
+        "city": "POLSEK CIAWI",
+        "call_number": "(0265) 455 110"
+    },
+    "14": {
+        "No": "14",
+        "location(coordinat)": "",
+        "city": "POLSEK KADIPATEN",
+        "call_number": "(0265) 429 467"
+    },
+    "15": {
+        "No": "15",
+        "location(coordinat)": "",
+        "city": "POLRES TASIKMALAYA KOTA",
+        "call_number": "(0265) 330 032"
+    },
+    "16": {
+        "No": "16",
+        "location(coordinat)": "",
+        "city": "Polsek Caringin",
+        "call_number": "(0251) 224417"
+    },
+    "17": {
+        "No": "17",
+        "location(coordinat)": "",
+        "city": "Polsek Klapanunggal",
+        "call_number": "(021) 82492276"
+    },
+    "18": {
+        "No": "18",
+        "location(coordinat)": "",
+        "city": "Polsek Megamendung",
+        "call_number": "(0251) 248569"
+    },
+    "19": {
+        "No": "19",
+        "location(coordinat)": "",
+        "city": "Polsek Babakan Madang",
+        "call_number": "(021) 87962777"
+    },
+    "20": {
+        "No": "20",
+        "location(coordinat)": "",
+        "city": "Polsek Nanggung",
+        "call_number": "(0251) 682769"
+    },
+    "21": {
+        "No": "21",
+        "location(coordinat)": "",
+        "city": "Polsek Cariu",
+        "call_number": "(021) 89961058"
+    },
+    "22": {
+        "No": "22",
+        "location(coordinat)": "",
+        "city": "Polsek Cileungsi",
+        "call_number": "(021) 8230861"
+    },
+    "23": {
+        "No": "23",
+        "location(coordinat)": "",
+        "city": "Polsek Jonggol",
+        "call_number": "(021) 89931174"
+    },
+    "24": {
+        "No": "24",
+        "location(coordinat)": "",
+        "city": "Polsek Cijeruk",
+        "call_number": "(0251) 220110"
+    },
+    "25": {
+        "No": "25",
+        "location(coordinat)": "",
+        "city": "Polsek Ciawi",
+        "call_number": "(0251) 240110"
+    },
+    "26": {
+        "No": "26",
+        "location(coordinat)": "",
+        "city": "Polsek Cisarua",
+        "call_number": "(0251) 254540"
+    },
+    "27": {
+        "No": "27",
+        "location(coordinat)": "",
+        "city": "Polsek Gunung Putri",
+        "call_number": "(0251) 8671405"
+    },
+    "28": {
+        "No": "28",
+        "location(coordinat)": "",
+        "city": "Polsek Citeureup",
+        "call_number": "(021) 8752229"
+    },
+    "29": {
+        "No": "29",
+        "location(coordinat)": "",
+        "city": "Polsek Cibinong",
+        "call_number": "(021) 8752217"
+    },
+    "30": {
+        "No": "30",
+        "location(coordinat)": "",
+        "city": "Polsek Parung",
+        "call_number": "(0251) 616007"
+    },
+    "31": {
+        "No": "31",
+        "location(coordinat)": "",
+        "city": "Polsek Gunung Sindur",
+        "call_number": "(021) 7561844"
+    },
+    "32": {
+        "No": "32",
+        "location(coordinat)": "",
+        "city": "Polsek Sukaraja",
+        "call_number": "(0251) 656678"
+    },
+    "33": {
+        "No": "33",
+        "location(coordinat)": "",
+        "city": "Polsek Kemang",
+        "call_number": "(0251) 7535935"
+    },
+    "34": {
+        "No": "34",
+        "location(coordinat)": "",
+        "city": "Polsek Ciomas",
+        "call_number": "(0251) 322334"
+    },
+    "35": {
+        "No": "35",
+        "location(coordinat)": "",
+        "city": "Polsek Rumpin",
+        "call_number": "(021) 75791076"
+    },
+    "36": {
+        "No": "36",
+        "location(coordinat)": "",
+        "city": "Polsek Ciampea",
+        "call_number": "(0251) 621146"
+    },
+    "37": {
+        "No": "37",
+        "location(coordinat)": "",
+        "city": "Polsek Cibungbulang",
+        "call_number": "(0251) 647398"
+    },
+    "38": {
+        "No": "38",
+        "location(coordinat)": "",
+        "city": "Polsek Leuwiliang",
+        "call_number": "(0251)  647003"
+    },
+    "39": {
+        "No": "39",
+        "location(coordinat)": "",
+        "city": "Polsek Parung Panjang",
+        "call_number": "(021) 5978880"
+    },
+    "40": {
+        "No": "40",
+        "location(coordinat)": "",
+        "city": "Polsek Cigudeg",
+        "call_number": "(0251) 681110"
+    },
+    "41": {
+        "No": "41",
+        "location(coordinat)": "",
+        "city": "Polsek Jasinga",
+        "call_number": "(021) 34357799"
+    },
+    "42": {
+        "No": "42",
+        "location(coordinat)": "",
+        "city": "Polres Bogor",
+        "call_number": "(021) 8750163"
+    },
+    "43": {
+        "No": "43",
+        "location(coordinat)": "",
+        "city": "Polsekta Bogor Tengah",
+        "call_number": "(0251) 8327428"
+    },
+    "44": {
+        "No": "44",
+        "location(coordinat)": "",
+        "city": "Polsekta Bogor Selatan",
+        "call_number": "(0251) 8321972"
+    },
+    "45": {
+        "No": "45",
+        "location(coordinat)": "",
+        "city": "Polsekta Bogor Barat",
+        "call_number": "(0251) 8322054"
+    },
+    "46": {
+        "No": "46",
+        "location(coordinat)": "",
+        "city": "Polsekta Bogor Timur",
+        "call_number": "(0251) 8322014"
+    },
+    "47": {
+        "No": "47",
+        "location(coordinat)": "",
+        "city": "Polsekta Bogor Utara",
+        "call_number": "(0251) 8325505"
+    },
+    "48": {
+        "No": "48",
+        "location(coordinat)": "",
+        "city": "Polsekta Tanahsareal",
+        "call_number": "(0251) 7542620"
+    },
+    "49": {
+        "No": "49",
+        "location(coordinat)": "",
+        "city": "Polresta Bogor",
+        "call_number": "(0251) 665463"
+    },
+    "50": {
+        "No": "50",
+        "location(coordinat)": "",
+        "city": "Polsek Citereup",
+        "call_number": "(0251) 8752229"
+    }
+}

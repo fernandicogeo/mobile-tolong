@@ -1,0 +1,212 @@
+{
+    "1": {
+        "No": "1",
+        "location(cordinat)": "",
+        "city": "Polrestabes Semarang ",
+        "call_number": "(024) 8444444"
+    },
+    "2": {
+        "No": "2",
+        "location(cordinat)": "",
+        "city": "Polresta Surakarta ",
+        "call_number": "(0271) 716198"
+    },
+    "3": {
+        "No": "3",
+        "location(cordinat)": "",
+        "city": "Polres Semarang  ",
+        "call_number": "(024) 6925666"
+    },
+    "4": {
+        "No": "4",
+        "location(cordinat)": "",
+        "city": "Polres Kendal",
+        "call_number": "(0294) 382110"
+    },
+    "5": {
+        "No": "5",
+        "location(cordinat)": "",
+        "city": "Polres Demak ",
+        "call_number": "(0291) 685110"
+    },
+    "6": {
+        "No": "6",
+        "location(cordinat)": "",
+        "city": "Polres Salatiga ",
+        "call_number": "(0298)  326710"
+    },
+    "7": {
+        "No": "7",
+        "location(cordinat)": "",
+        "city": "Polres Banyumas  ",
+        "call_number": "(0281) 622259"
+    },
+    "8": {
+        "No": "8",
+        "location(cordinat)": "",
+        "city": "Polres Cilacap  ",
+        "call_number": "(0282) 544230"
+    },
+    "9": {
+        "No": "9",
+        "location(cordinat)": "",
+        "city": "Polres Banjarnegara ",
+        "call_number": "(0286) 592110"
+    },
+    "10": {
+        "No": "10",
+        "location(cordinat)": "",
+        "city": "Polres Purbalingga ",
+        "call_number": "(0281)  891110"
+    },
+    "11": {
+        "No": "11",
+        "location(cordinat)": "",
+        "city": "Polres Pekalongan Kota ",
+        "call_number": "(0285)  421692"
+    },
+    "12": {
+        "No": "12",
+        "location(cordinat)": "",
+        "city": "Polres Pekalongan  ",
+        "call_number": "(0285)  382028"
+    },
+    "13": {
+        "No": "13",
+        "location(cordinat)": "",
+        "city": "Polres Tegal Kota   ",
+        "call_number": "(0283)  356016"
+    },
+    "14": {
+        "No": "14",
+        "location(cordinat)": "",
+        "city": "Polres Tegal   ",
+        "call_number": "(0283)  492003"
+    },
+    "15": {
+        "No": "15",
+        "location(cordinat)": "",
+        "city": "Polres Brebes   ",
+        "call_number": "(0283)  671110"
+    },
+    "16": {
+        "No": "16",
+        "location(cordinat)": "",
+        "city": "Polres Pemalang   ",
+        "call_number": "(0284)  325038"
+    },
+    "17": {
+        "No": "17",
+        "location(cordinat)": "",
+        "city": "Polres Batang   ",
+        "call_number": "(0285)  391074"
+    },
+    "18": {
+        "No": "18",
+        "location(cordinat)": "",
+        "city": "Polres Pati   ",
+        "call_number": "(0295)  381610"
+    },
+    "19": {
+        "No": "19",
+        "location(cordinat)": "",
+        "city": "Polres Kudus   ",
+        "call_number": "(0291)  438110"
+    },
+    "20": {
+        "No": "20",
+        "location(cordinat)": "",
+        "city": "Polres Jepara   ",
+        "call_number": "(0291)  591110"
+    },
+    "21": {
+        "No": "21",
+        "location(cordinat)": "",
+        "city": "Polres Rembang   ",
+        "call_number": "(0295)  691110"
+    },
+    "22": {
+        "No": "22",
+        "location(cordinat)": "",
+        "city": "Polres Grobogan   ",
+        "call_number": "(0292)  421110"
+    },
+    "23": {
+        "No": "23",
+        "location(cordinat)": "",
+        "city": "Polres Blora   ",
+        "call_number": "(0296)  525110"
+    },
+    "24": {
+        "No": "24",
+        "location(cordinat)": "",
+        "city": "Polres Sukoharjo   ",
+        "call_number": "(0271)  592484"
+    },
+    "25": {
+        "No": "25",
+        "location(cordinat)": "",
+        "city": "Polres Klaten   ",
+        "call_number": "(0272)  321234"
+    },
+    "26": {
+        "No": "26",
+        "location(cordinat)": "",
+        "city": "Polres Boyolali   ",
+        "call_number": "(0276)  321110"
+    },
+    "27": {
+        "No": "27",
+        "location(cordinat)": "",
+        "city": "Polres Karanganyar   ",
+        "call_number": "(0271)  495110"
+    },
+    "28": {
+        "No": "28",
+        "location(cordinat)": "",
+        "city": "Polres Sragen   ",
+        "call_number": "(0271)  891510"
+    },
+    "29": {
+        "No": "29",
+        "location(cordinat)": "",
+        "city": "Polres Wonogiri   ",
+        "call_number": "(0273)  321510"
+    },
+    "30": {
+        "No": "30",
+        "location(cordinat)": "",
+        "city": "Polres Magelang Kota   ",
+        "call_number": "(0293)  313134"
+    },
+    "31": {
+        "No": "31",
+        "location(cordinat)": "",
+        "city": "Polres Magelang   ",
+        "call_number": "(0293)  788787"
+    },
+    "32": {
+        "No": "32",
+        "location(cordinat)": "",
+        "city": "Polres Purworejo   ",
+        "call_number": "(0275)  321110"
+    },
+    "33": {
+        "No": "33",
+        "location(cordinat)": "",
+        "city": "Polres Kebumen   ",
+        "call_number": "(0287)  382110"
+    },
+    "34": {
+        "No": "34",
+        "location(cordinat)": "",
+        "city": "Polres Temanggung   ",
+        "call_number": "(0293)  491110"
+    },
+    "35": {
+        "No": "35",
+        "location(cordinat)": "",
+        "city": "Polres Wonosobo   ",
+        "call_number": "(0286)  321110"
+    }
+}

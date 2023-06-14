@@ -1,0 +1,27 @@
+{
+    "1": {
+        "No": "1",
+        "Name": "Ambulans",
+        "call_number": "118"
+    },
+    "2": {
+        "No": "2",
+        "Name": "Police",
+        "call_number": "110"
+    },
+    "3": {
+        "No": "3",
+        "Name": "Fire Departement",
+        "call_number": "113"
+    },
+    "4": {
+        "No": "4",
+        "Name": "Team Seacrh and Rescue",
+        "call_number": "115"
+    },
+    "5": {
+        "No": "5",
+        "Name": "Emergency",
+        "call_number": "112"
+    }
+}

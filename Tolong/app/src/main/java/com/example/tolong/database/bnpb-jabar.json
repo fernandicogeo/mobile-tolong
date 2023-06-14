@@ -1,0 +1,104 @@
+{
+    "1": {
+        "No": "1",
+        "location(coordinat)": "",
+        "city": "Kabupaten Bandung",
+        "call_number": "(022)85872591"
+    },
+    "2": {
+        "No": "2",
+        "location(coordinat)": "",
+        "city": "Kabupaten Sukabumi",
+        "call_number": "(0266) 219461"
+    },
+    "3": {
+        "No": "3",
+        "location(coordinat)": "",
+        "city": "Kabupaten Garut",
+        "call_number": "262242746"
+    },
+    "4": {
+        "No": "4",
+        "location(coordinat)": "",
+        "city": "Kabupaten Bogor",
+        "call_number": "2187914900"
+    },
+    "5": {
+        "No": "5",
+        "location(coordinat)": "",
+        "city": "Kabupaten Majalengka",
+        "call_number": "233281127"
+    },
+    "6": {
+        "No": "6",
+        "location(coordinat)": "",
+        "city": "Kabupaten Cianjur",
+        "call_number": "263282400"
+    },
+    "7": {
+        "No": "7",
+        "location(coordinat)": "",
+        "city": "Kabupaten Ciamis",
+        "call_number": "265773904"
+    },
+    "8": {
+        "No": "8",
+        "location(coordinat)": "",
+        "city": "Kabupaten Bandung Barat",
+        "call_number": "226866258"
+    },
+    "9": {
+        "No": "9",
+        "location(coordinat)": "",
+        "city": "Kabupaten Bekasi",
+        "call_number": "2194640715"
+    },
+    "10": {
+        "No": "10",
+        "location(coordinat)": "",
+        "city": "Kabupaten Indramayu",
+        "call_number": "234277721"
+    },
+    "11": {
+        "No": "11",
+        "location(coordinat)": "",
+        "city": "Kabupaten Karawang",
+        "call_number": "(0267) 8405677"
+    },
+    "12": {
+        "No": "12",
+        "location(coordinat)": "",
+        "city": "Kabupaten Pangandaran",
+        "call_number": "(0265) 2640593"
+    },
+    "13": {
+        "No": "13",
+        "location(coordinat)": "",
+        "city": "Kabupaten Sumedang",
+        "call_number": "(0261) 208171"
+    },
+    "14": {
+        "No": "14",
+        "location(coordinat)": "",
+        "city": "Kota Bogor",
+        "call_number": "(0251) 8322100"
+    },
+    "15": {
+        "No": "15",
+        "location(coordinat)": "",
+        "city": "Kota Cirebon",
+        "call_number": "(0231) 82282843"
+    },
+    "16": {
+        "No": "16",
+        "location(coordinat)": "",
+        "city": "Kota Sukabumi",
+        "call_number": "(0266) 244334"
+    },
+    "17": {
+        "No": "17",
+        "location(coordinat)": "",
+        "city": "Kota Tasikmalaya",
+        "call_number": "(0265) 324852"
+    }
+}

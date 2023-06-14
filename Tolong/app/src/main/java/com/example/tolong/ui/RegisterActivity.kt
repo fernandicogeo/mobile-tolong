@@ -20,6 +20,7 @@ import androidx.appcompat.app.AlertDialog
 import com.example.tolong.R
 import com.example.tolong.databinding.ActivityRegisterBinding
 import com.example.tolong.repository.ResultCondition
+import com.example.tolong.ui.customview.NameEditText
 import com.example.tolong.ui.customview.PasswordEditText
 import com.example.tolong.ui.customview.RegisterButton
 import com.example.tolong.viewmodel.RegisterViewModel
@@ -38,7 +39,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var linkToLogin: TextView
 
     private lateinit var signupButton: RegisterButton
-    private lateinit var nameEditText: EditText
+    private lateinit var nameEditText: NameEditText
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: PasswordEditText
     private lateinit var confirmPasswordEditText: PasswordEditText
@@ -163,8 +164,8 @@ class RegisterActivity : AppCompatActivity() {
     private fun showDialog(isSuccess: Boolean) {
         if (isSuccess) {
             AlertDialog.Builder(this).apply {
-                setTitle("Signup berhasil!!")
-                setMessage("Anda sudah terdaftar di Story App! Silakan login.")
+                setTitle("Register berhasil!!")
+                setMessage("Anda sudah terdaftar di Tolong! Silakan login.")
                 setPositiveButton("Lanjut") { _, _ ->
                     val intent = Intent(context, LoginActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
@@ -176,8 +177,8 @@ class RegisterActivity : AppCompatActivity() {
             }
         } else {
             AlertDialog.Builder(this).apply {
-                setTitle("Signup gagal!")
-                setMessage("Format email anda salah/sudah terdaftar!")
+                setTitle("Register gagal!")
+                setMessage("Format email anda salah/password anda tidak cocok!")
                 create()
                 show()
             }
@@ -217,8 +218,10 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun setTextViewEnable() {
+        val resultName = nameEditText.text
         val resultPassword = passwordEditText.text
-        signupButton.isEnabled = nameEditText.text.isNotEmpty() == true && emailEditText.text.isNotEmpty() == true && resultPassword.toString().length >= 8
+        val resultConfirm = confirmPasswordEditText.text
+        signupButton.isEnabled = resultName.toString().length >= 3 && emailEditText.text.isNotEmpty() == true && resultPassword.toString().length >= 8 && resultConfirm.toString().length >= 8
 //        smallPasswordTextView.alpha = if (resultPassword.toString().isEmpty() || resultPassword.toString().length >= 8) 0F else 1F
     }
 }

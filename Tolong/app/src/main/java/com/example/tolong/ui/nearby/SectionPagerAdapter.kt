@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class SectionsPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {
+class SectionPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {
     override fun createFragment(position: Int): Fragment {
         var fragment: Fragment? = null
         when (position) {
-            0 -> fragment = AmbulanceFragment()
-            1 -> fragment = PoliceFragment()
-            2 -> fragment = FirefighterFragment()
+            0 -> fragment = NearbyFragment()
+            1 -> fragment = NearbyFragment()
+            2 -> fragment = NearbyFragment()
         }
         return fragment as Fragment
     }

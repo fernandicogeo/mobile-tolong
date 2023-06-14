@@ -15,6 +15,8 @@ class UserPreference(context: Context) {
         prefEdit.apply()
     }
 
+
+
     fun getLoginSession() : UserModel {
         val name = pref.getString(USER_NAME, null)
         val email = pref.getString(USER_EMAIL, null)

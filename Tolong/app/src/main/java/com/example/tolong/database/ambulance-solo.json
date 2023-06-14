@@ -1,0 +1,121 @@
+{
+    "1": {
+        "No": "1",
+        "name_place": "RS Umum Daerah Dr. Moewardi Surakarta",
+        "location(cordinat)": "Jl. Kolonel Sutarto No.132, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126",
+        "city": "",
+        "call_number": "(0271) 637415"
+    },
+    "2": {
+        "No": "2",
+        "name_place": "RS Umum Dr. Oen",
+        "location(cordinat)": "l. Brigjend Katamso No.55, Tegalharjo, Kec. Jebres, Kota Surakarta, Jawa Tengah 57128",
+        "city": "",
+        "call_number": "(0271) 643139 "
+    },
+    "3": {
+        "No": "3",
+        "name_place": "RS Umum Tk IV Slamet Riyadi Surakarta",
+        "location(cordinat)": "Jalan Slamet Riyadi No No.321Kvi, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57148",
+        "city": "",
+        "call_number": "82135597571"
+    },
+    "4": {
+        "No": "4",
+        "name_place": "RS Umum Brayat Minulya",
+        "location(cordinat)": "Jl. Dr. Setiabudi No.106, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139",
+        "city": "",
+        "call_number": "(0271) 716646"
+    },
+    "5": {
+        "No": "5",
+        "name_place": "RS Umum Panti Waluyo",
+        "location(cordinat)": "Jl. Slamet Riyadi No.542, Kerten, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57143",
+        "city": "",
+        "call_number": "(0271) 712114"
+    },
+    "6": {
+        "No": "6",
+        "name_place": "RS Umum PKU Muhammadiyah Surakarta",
+        "location(cordinat)": "Jl. Ronggowarsito No.130, Timuran, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57131",
+        "city": "",
+        "call_number": "(0271) 714578 "
+    },
+    "7": {
+        "No": "7",
+        "name_place": "RS Umum Islam Kustati",
+        "location(cordinat)": "Jl. Kapten Mulyadi No.249, Ps. Kliwon, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57118",
+        "city": "",
+        "call_number": "(0271) 2937111"
+    },
+    "8": {
+        "No": "8",
+        "name_place": "RS Umum Kasih Ibu",
+        "location(cordinat)": "Jl. Slamet Riyadi No.404, Purwosari, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57142",
+        "city": "",
+        "call_number": "(0271) 714422"
+    },
+    "9": {
+        "No": "9",
+        "name_place": "RS Umum Triharsi",
+        "location(cordinat)": "Jalan Wolter Monginsidi No.82, Gilingan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57134",
+        "city": "",
+        "call_number": "(0271) 646061"
+    },
+    "10": {
+        "No": "10",
+        "name_place": "RS Umum Pusat Surakarta",
+        "location(cordinat)": "Jl. Profesor DR. Soeharso No.28, Jajar, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57144",
+        "city": "",
+        "call_number": "(0271) 728297"
+    },
+    "11": {
+        "No": "11",
+        "name_place": "RS Umum Daerah Ibu Fatmawati Soekarno",
+        "location(cordinat)": "Jl. Lettu Sumarto No.1, Kedungupit, Kadipiro, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57136",
+        "city": "",
+        "call_number": "(0271) 715700"
+    },
+    "12": {
+        "No": "12",
+        "name_place": "RS PKU Muhammadiyah Sampangan Surakarta",
+        "location(cordinat)": "Gang Cempaka Sebelas RT.2/12, Jl. Sampangan No.119, Semanggi, Kec. Ps. Kliwon, Jawa Tengah 57191",
+        "city": "",
+        "call_number": "(0271) 633894"
+    },
+    "13": {
+        "No": "13",
+        "name_place": "RS Umum Daerah Bung Karno Kota Surakarta",
+        "location(cordinat)": "Jl. Sungai Serang I, RT.03/RW.03, Mojo, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57117",
+        "city": "",
+        "call_number": "(0271) 2936666"
+    },
+    "14": {
+        "No": "14",
+        "name_place": "RS JIH Solo",
+        "location(cordinat)": "Jl. Adi Sucipto No.118, Jajar, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57144",
+        "city": "",
+        "call_number": "1500805"
+    },
+    "15": {
+        "No": "15",
+        "name_place": "RS Onkologi Solo",
+        "location(cordinat)": "Jl. Siwalan No.37, Kerten, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57143",
+        "city": "",
+        "call_number": "(0271) 741919"
+    },
+    "16": {
+        "No": "16",
+        "name_place": "RS Bhayangkara Surakarta",
+        "location(cordinat)": "Jl. Adi Sucipto No.2, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139",
+        "city": "",
+        "call_number": "82138150755"
+    },
+    "17": {
+        "No": "17",
+        "name_place": "PSC 119 Surakarta",
+        "location(cordinat)": "Komp. Balai Kota, Jl. Jend. Sudirman No.2, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57111",
+        "city": "",
+        "call_number": "119"
+    }
+}

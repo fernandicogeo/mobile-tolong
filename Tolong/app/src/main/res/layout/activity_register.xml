@@ -52,7 +52,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.example.tolong.ui.customview.NameEditText
                 android:id="@+id/et_name"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"

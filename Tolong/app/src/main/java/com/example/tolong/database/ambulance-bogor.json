@@ -1,0 +1,114 @@
+{
+    "1": {
+        "No": "1",
+        "name_place": "RS Umum Azra",
+        "location(cordinat)": "Jl. Raya Pajajaran No.219, RT.02/RW.11, Bantarjati, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16153",
+        "city": "Bogor",
+        "call_number": "(0251) 8318456"
+    },
+    "2": {
+        "No": "2",
+        "name_place": "RS Pasutri Bogor",
+        "location(cordinat)": "Jl. Merak No.3, RT.03/RW.06, Tanah Sareal, Kec. Tanah Sereal, Kota Bogor, Jawa Barat 16161",
+        "city": "Bogor",
+        "call_number": "(0251) 8349707"
+    },
+    "3": {
+        "No": "3",
+        "name_place": "RS Ibu dan Anak Sawojajar",
+        "location(cordinat)": "JL.Sawangan Permai 50 RT 002/0916511 16121, RT.01/RW.04, Pabaton, Central Bogor, Bogor City, West Java 16121",
+        "city": "Bogor",
+        "call_number": "(0251) 8324371"
+    },
+    "4": {
+        "No": "4",
+        "name_place": "RS Mulia",
+        "location(cordinat)": "Jalan Raya Pajajaran No.98 Kp. Kalibata Rt. 003/III, Kelurahan, RT.02/RW.03, Bantarjati, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16153",
+        "city": "Bogor",
+        "call_number": "(0251)  8379898"
+    },
+    "5": {
+        "No": "5",
+        "name_place": "RSIA Nuraida",
+        "location(cordinat)": "Jalan Haji Jl. Achmad Sobana No.105, RT.04/RW.06, Tegal Gundil, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16152",
+        "city": "Bogor",
+        "call_number": "(0251) 8368866"
+    },
+    "6": {
+        "No": "6",
+        "name_place": "RSUD Leuwiliang Bogor",
+        "location(cordinat)": "Jl. Raya Cibeber No.l, Cibeber, Kec. Leuwiliang, Kabupaten Bogor, Jawa Barat",
+        "city": "Bogor",
+        "call_number": "(0251) 8643290"
+    },
+    "7": {
+        "No": "7",
+        "name_place": "RS Hermina Bogor",
+        "location(cordinat)": "Jl. Ring Road I Kav Perumahan, Jl. Ring Road Taman Yasmin No.23, 25, 27, RT.08/RW.08, Curugmekar, Kec. Bogor Bar., Kota Bogor, Jawa Barat",
+        "city": "Bogor",
+        "call_number": "(0251) 8382525"
+    },
+    "8": {
+        "No": "8",
+        "name_place": "RS Sentra Medika Cibinong",
+        "location(cordinat)": "Jl. Raya Mayor Oking Jaya Atmaja No.9, Cirimekar, Kec. Cibinong, Kabupaten Bogor, Jawa Barat",
+        "city": "Bogor",
+        "call_number": "(021) 87909999"
+    },
+    "9": {
+        "No": "9",
+        "name_place": "RS PMI Bogor",
+        "location(cordinat)": "Jl. Raya Pajajaran No.80, RT.02/RW.05, Tegallega, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat",
+        "city": "Bogor",
+        "call_number": "(0251) 8393030"
+    },
+    "10": {
+        "No": "10",
+        "name_place": "RS Umum Melania",
+        "location(cordinat)": "Jl. Pahlawan No.91, Kota Bogor",
+        "city": "Bogor",
+        "call_number": "(0251) 8321196"
+    },
+    "11": {
+        "No": "11",
+        "name_place": "RS Paru Dr. M. Goenawan Partowidigdo",
+        "location(cordinat)": "Jl. Raya Puncak KM.83, Po Box 28 Cisarua Bogor 16750",
+        "city": "Bogor",
+        "call_number": "(0251) 8253630"
+    },
+    "12": {
+        "No": "12",
+        "name_place": "RS Umum Karya Bhakti Pratiwi",
+        "location(cordinat)": "Jl. Raya Dramaga KM. 7 Bogor",
+        "city": "Bogor",
+        "call_number": "(0251) 8626868"
+    },
+    "13": {
+        "No": "13",
+        "name_place": "RS Umum Restu Kasih",
+        "location(cordinat)": "Jl. Raya Bogor KM 19 No. 3A Kramat Jati",
+        "city": "Bogor",
+        "call_number": "(021) 8001177"
+    },
+    "14": {
+        "No": "14",
+        "name_place": "RS Umum Harapan Bunda",
+        "location(cordinat)": "Jl. Raya Bogor Km.22 No.44 Jakarta Timur",
+        "city": "Bogor",
+        "call_number": "8400257"
+    },
+    "15": {
+        "No": "15",
+        "name_place": "RS Umum Bhayangkara Tk. I R.Said Sukanto",
+        "location(cordinat)": "Jl. Raya Bogor Kramat Jati,Jakarta Timur",
+        "city": "Bogor",
+        "call_number": "(021) 8093288"
+    },
+    "16": {
+        "No": "16",
+        "name_place": "RS Umum Sentra Medika Cibinong",
+        "location(cordinat)": "Jl. Mayor Oking Jaya Atmaja No.9 Bogor",
+        "city": "Bogor",
+        "call_number": "(021) 87909999"
+    }
+}

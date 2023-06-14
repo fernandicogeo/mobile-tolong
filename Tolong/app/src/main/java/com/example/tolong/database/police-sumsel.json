@@ -1,0 +1,20 @@
+{
+    "1": {
+        "No": "1",
+        "location(coordinat)": "Jl. Jend. Sudirman No.KM.4, RW.5, Pahlawan, Kec. Kemuning, Kota Palembang, Sumatera Selatan 30151",
+        "name": "Markas Besar PolDa Sumatera Selatan",
+        "call_number": "(0711) 320550"
+    },
+    "2": {
+        "No": "2",
+        "location(coordinat)": "2RG5+2C5, Jalan Dokter Sutami, Kalidoni, Sei Selayur, Palembang, Kota Palembang, Sumatera Selatan 30118",
+        "name": "Polsekta Kalidoni",
+        "call_number": "0895-2493-9006"
+    },
+    "3": {
+        "No": "3",
+        "location(coordinat)": "Jl. KH Wahid Hasyim, 3-4 Ulu, Seberang Ulu I, 3-4 Ulu, Kecamatan Seberang Ulu I, Kota Palembang, Sumatera Selatan 30111",
+        "name": "Polisi Sektor Kota (Polsekta) Seberang Ulu 1 Palembang",
+        "call_number": "(0711) 510128"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "1": {
+        "No": "1",
+        "location(coordinat)": "3QHX+Q6C, Sako, Kec. Sako, Kota Palembang, Sumatera Selatan 30961",
+        "city": "DINAS PEMADAM KEBAKARAN \"POS SAKO\" SEMATANG BORANG",
+        "call_number": "(0711) 822532"
+    },
+    "2": {
+        "No": "2",
+        "location(coordinat)": "Jl. Merdeka No.8, 19 Ilir, Kec. Bukit Kecil, Kota Palembang, Sumatera Selatan 30113",
+        "city": "Dinas Pemadam Kebakaran dan Penanggulangan Bencana Kota Palembang",
+        "call_number": "(0711) 312011"
+    },
+    "3": {
+        "No": "3",
+        "location(coordinat)": "Jl. Talang Keramat, Kebun Bunga, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30961",
+        "city": "Pos Damkar Talang Keramat",
+        "call_number": "(0711) 5712333"
+    }
+}
