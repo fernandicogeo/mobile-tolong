@@ -42,14 +42,19 @@ class NearbyFragment : Fragment() {
         val policeList: List<PoliceModel> = police.values.toList()
         val firefighterList: List<FireDepModel> = firefighter.values.toList()
 
-        arguments?.let {
-            position = it.getInt(ARG_POSITION)
-        }
+        position = arguments!!.getInt(ARG_POSITION)
 
+//        if (position == 0) {
+//            setAmbulanceData(ambulanceList)
+//        } else if (position == 1) {
+//            setPoliceData(policeList)
+//        } else if (position == 2) {
+//            setFirefighterData(firefighterList)
+//        }
         when (position) {
-            1 -> setAmbulanceData(ambulanceList)
-            2 -> setPoliceData(policeList)
-            3 -> setFirefighterData(firefighterList)
+            0 -> setAmbulanceData(ambulanceList)
+            1 -> setPoliceData(policeList)
+            2 -> setFirefighterData(firefighterList)
         }
     }
 

@@ -168,7 +168,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.example.tolong.ui.customview.RegisterButton
+        <com.example.tolong.ui.customview.SubmitButton
             android:id="@+id/btn_register"
             android:alpha="1"
             android:layout_width="wrap_content"

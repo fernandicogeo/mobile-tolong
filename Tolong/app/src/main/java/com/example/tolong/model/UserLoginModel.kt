@@ -14,4 +14,13 @@ class UserLoginModel (
 
     @field:SerializedName("accessToken")
     val accessToken: String,
+
+    @field:SerializedName("password")
+    val password: String,
+
+    @field:SerializedName("alamat")
+    val alamat: String,
+
+    @field:SerializedName("nomorhp")
+    val nomorhp: String,
 ) : Parcelable

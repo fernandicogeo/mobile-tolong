@@ -49,6 +49,8 @@ class ProfileActivity : AppCompatActivity() {
         preference = UserPreference(this)
         binding.tvName.text = preference.getLoginSession().name
         binding.tvEmail.text = preference.getLoginSession().email
+        binding.tvAlamat.text = preference.getLoginSession().alamat
+        binding.tvNohp.text = preference.getLoginSession().nomorhp
 
         binding.btnEdit.setOnClickListener {
             startActivity(Intent(this, EditProfileActivity::class.java))

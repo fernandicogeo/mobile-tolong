@@ -3,8 +3,10 @@ package com.example.tolong.repository.auth
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.example.tolong.api.auth.ApiServiceAuth
+import com.example.tolong.api.auth.EditRequest
 import com.example.tolong.api.auth.LoginRequest
 import com.example.tolong.api.auth.RegisterRequest
+import com.example.tolong.model.EditModel
 import com.example.tolong.model.LoginModel
 import com.example.tolong.model.RegisterModel
 import com.example.tolong.preferences.UserPreference
@@ -40,6 +42,24 @@ class RepositoryAuth(private val pref: UserPreference, private val apiService: A
             val requestBody = json.toRequestBody("application/json".toMediaType())
 
             val response = apiService.register(requestBody)
+            if (response.error.toBoolean()) {
+                emit(ResultCondition.ErrorState(response.msg))
+            } else {
+                emit(ResultCondition.SuccessState(response))
+            }
+        } catch (e: Exception) {
+            emit(ResultCondition.ErrorState(e.message.toString()))
+        }
+    }
+
+    fun edit(userName: String, userEmail: String, userAddress: String?, userNohp: String?, userPassword: String?): LiveData<ResultCondition<EditModel>> = liveData {
+        emit(ResultCondition.LoadingState)
+        try {
+            val request = EditRequest(userName, userEmail, userAddress, userNohp, userPassword)
+            val json = Gson().toJson(request)
+            val requestBody = json.toRequestBody("application/json".toMediaType())
+
+            val response = apiService.edit(requestBody)
             if (response.error.toBoolean()) {
                 emit(ResultCondition.ErrorState(response.msg))
             } else {

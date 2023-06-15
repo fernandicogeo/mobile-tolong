@@ -17,7 +17,7 @@ class SectionPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(ac
     override fun createFragment(position: Int): Fragment {
         val fragment = NearbyFragment()
         fragment.arguments = Bundle().apply {
-            putInt(NearbyFragment.ARG_POSITION, position + 1)
+            putInt(NearbyFragment.ARG_POSITION, position)
             putSerializable(NearbyFragment.ARG_AMBULANCE, ambulance as Serializable)
             putSerializable(NearbyFragment.ARG_POLICE, police as Serializable)
             putSerializable(NearbyFragment.ARG_FIREFIGHTER, firefighter as Serializable)

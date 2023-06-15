@@ -12,7 +12,7 @@ data class AmbulanceModel(
     @SerializedName("name_place")
     val name: String,
 
-    @SerializedName("location(cordinat)")
+    @SerializedName("location")
     val location: String,
 
     @SerializedName("city")

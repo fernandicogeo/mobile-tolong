@@ -4,12 +4,14 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
+import com.example.tolong.R
 import com.example.tolong.databinding.ActivityLoginBinding
 import com.example.tolong.model.LoginModel
 import com.example.tolong.model.UserModel
@@ -113,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
     private fun saveLoginSession(login: LoginModel) {
         val loginPref = UserPreference(this)
         val loginResult = login.loginresult
-        val user = UserModel(name = loginResult?.name, email = loginResult?.email, accessToken = loginResult?.accessToken)
+        val user = UserModel(name = loginResult?.name, email = loginResult?.email, accessToken = loginResult?.accessToken, password = loginResult?.password, alamat = loginResult?.alamat, nomorhp = loginResult?.nomorhp)
         loginPref.saveLoginSession(user)
     }
 

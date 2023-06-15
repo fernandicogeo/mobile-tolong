@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_gambar_luka"
+            android:id="@+id/tv_telefon"
             android:text="@string/click"
             android:fontFamily="@font/gothicextrabold"
             android:textColor="@color/white"
@@ -27,7 +27,4 @@
             android:layout_height="match_parent"
             tools:listitem="@layout/item_nearby" />
     </LinearLayout>
-
-
-
 </FrameLayout>

@@ -9,7 +9,7 @@ data class PoliceModel(
     @SerializedName("No")
     val number: String,
 
-    @SerializedName("location(coordinat)")
+    @SerializedName("location")
     val location: String,
 
     @SerializedName("city")

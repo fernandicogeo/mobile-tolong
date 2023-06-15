@@ -19,7 +19,7 @@ import com.example.tolong.databinding.ActivityRegisterBinding
 import com.example.tolong.repository.ResultCondition
 import com.example.tolong.ui.customview.NameEditText
 import com.example.tolong.ui.customview.PasswordEditText
-import com.example.tolong.ui.customview.RegisterButton
+import com.example.tolong.ui.customview.SubmitButton
 import com.example.tolong.viewmodel.RegisterViewModel
 import com.example.tolong.viewmodel.ViewModelFactoryAuth
 import com.google.android.material.textfield.TextInputLayout
@@ -35,7 +35,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var passwordTextView: TextView
     private lateinit var linkToLogin: TextView
 
-    private lateinit var signupButton: RegisterButton
+    private lateinit var signupButton: SubmitButton
     private lateinit var nameEditText: NameEditText
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: PasswordEditText

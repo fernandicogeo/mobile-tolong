@@ -159,6 +159,7 @@ class NearbyActivity : AppCompatActivity() {
                     val ambulanceData = searchModel.ambulance
                     val policeData = searchModel.police
                     val firefighterData = searchModel.fireDep
+                    Log.d("NearbyActivity", "province: $province, ambulanceData: $ambulanceData, policeData: $policeData. firefighterData: $firefighterData")
                     sectionsPagerAdapter.ambulance = ambulanceData
                     sectionsPagerAdapter.police = policeData
                     sectionsPagerAdapter.firefighter = firefighterData
