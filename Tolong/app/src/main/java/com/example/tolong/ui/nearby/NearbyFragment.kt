@@ -44,19 +44,18 @@ class NearbyFragment : Fragment() {
 
         position = arguments!!.getInt(ARG_POSITION)
 
-//        if (position == 0) {
-//            setAmbulanceData(ambulanceList)
-//        } else if (position == 1) {
-//            setPoliceData(policeList)
-//        } else if (position == 2) {
-//            setFirefighterData(firefighterList)
-//        }
         when (position) {
-            0 -> setAmbulanceData(ambulanceList)
-            1 -> setPoliceData(policeList)
-            2 -> setFirefighterData(firefighterList)
+            0 -> {
+                binding.tvTelefon.text =
+                    "Silakan geser untuk mendapatkan daftar Ambulance, Police, dan Firefighter serta dapat menelfonnya."
+                binding.tvTelefon.textSize = 13F
+            }
+            1 -> setAmbulanceData(ambulanceList)
+            2 -> setPoliceData(policeList)
+            3 -> setFirefighterData(firefighterList)
         }
     }
+
 
     private fun setAmbulanceData(datas: List<AmbulanceModel>) {
         val listName = ArrayList<String>()

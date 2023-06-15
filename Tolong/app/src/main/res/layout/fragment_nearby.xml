@@ -17,8 +17,11 @@
             android:fontFamily="@font/gothicextrabold"
             android:textColor="@color/white"
             android:textSize="20sp"
+            android:lineHeight="30dp"
             android:layout_marginTop="15dp"
             android:paddingBottom="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:textAlignment="center"/>
 
         <androidx.recyclerview.widget.RecyclerView

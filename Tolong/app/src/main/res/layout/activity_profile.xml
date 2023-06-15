@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,121 +7,133 @@
     android:background="@color/grey"
     tools:context=".ui.profile.ProfileActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_profile"
-        android:text="@string/menu_profile"
-        android:fontFamily="@font/gothicextrabold"
-        android:textColor="@color/yellow"
-        android:textSize="37sp"
-        android:layout_marginTop="70dp"
-        android:shadowColor="@color/black"
-        android:shadowDx="5"
-        android:shadowDy="5"
-        android:shadowRadius="10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/img_profile"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="30dp"
-        android:contentDescription="@string/profile_image"
-        tools:src="@drawable/ic_launcher_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_profile" />
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="85dp"
+                tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_profile"
+                    android:text="@string/menu_profile"
+                    android:fontFamily="@font/gothicextrabold"
+                    android:textColor="@color/yellow"
+                    android:textSize="37sp"
+                    android:layout_marginTop="70dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_name"
-        android:text="@string/name"
-        android:fontFamily="@font/gothicbold"
-        android:textColor="@color/white"
-        android:textSize="27sp"
-        android:textAlignment="center"
-        android:layout_margin="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img_profile"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/profile_image"
+                    tools:src="@drawable/logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_profile" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_email"
-        android:text="@string/email"
-        android:fontFamily="@font/gothicregular"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        android:textAlignment="center"
-        android:layout_marginTop="15dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name"
+                    android:text="@string/name"
+                    android:fontFamily="@font/gothicbold"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:layout_margin="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_profile"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_alamat"
-        android:text="@string/alamat"
-        android:fontFamily="@font/gothicregular"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        android:textAlignment="center"
-        android:layout_marginTop="15dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_email"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_email"
+                    android:text="@string/email"
+                    android:fontFamily="@font/gothicregular"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_nohp"
-        android:text="@string/nohp"
-        android:fontFamily="@font/gothicregular"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        android:textAlignment="center"
-        android:layout_marginTop="15dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_alamat"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_alamat"
+                    android:text="@string/alamat"
+                    android:fontFamily="@font/gothicregular"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_email"/>
 
-    <Button
-        android:id="@+id/btn_edit"
-        android:alpha="1"
-        android:layout_width="140dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/gothicsemibold"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/yellow"
-        android:text="@string/edit_profile"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nohp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_nohp"
+                    android:text="@string/nohp"
+                    android:fontFamily="@font/gothicregular"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_alamat"/>
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:alpha="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/gothicsemibold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/yellow"
+                    android:text="@string/edit_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_nohp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

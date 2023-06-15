@@ -164,7 +164,9 @@ class NearbyActivity : AppCompatActivity() {
                     sectionsPagerAdapter.police = policeData
                     sectionsPagerAdapter.firefighter = firefighterData
                 }
-                else -> {}
+                else -> {
+                    Log.d("NearbyActivity", "res: $result")
+                }
             }
         }
         nearbyViewModel.search(province).observe(this, searchResultObserver)
@@ -214,6 +216,7 @@ class NearbyActivity : AppCompatActivity() {
         const val EXTRA_LON = "extra_lon"
         @StringRes
         private val TAB_TITLES = intArrayOf(
+            R.string.menu_home,
             R.string.ambulance,
             R.string.police,
             R.string.firefighter,

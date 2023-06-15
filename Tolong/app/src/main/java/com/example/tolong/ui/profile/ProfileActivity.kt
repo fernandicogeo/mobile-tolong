@@ -4,6 +4,7 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -12,6 +13,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import com.bumptech.glide.request.target.Target
 import com.example.tolong.R
 import com.example.tolong.databinding.ActivityMainBinding
 import com.example.tolong.databinding.ActivityProfileBinding
@@ -51,6 +55,17 @@ class ProfileActivity : AppCompatActivity() {
         binding.tvEmail.text = preference.getLoginSession().email
         binding.tvAlamat.text = preference.getLoginSession().alamat
         binding.tvNohp.text = preference.getLoginSession().nomorhp
+
+        val targetWidth = 170
+        val targetHeight = 170
+
+        val options = RequestOptions()
+            .override(targetWidth, targetHeight)
+
+        Glide.with(this)
+            .load(R.drawable.logo)
+            .apply(options)
+            .into(binding.imgProfile)
 
         binding.btnEdit.setOnClickListener {
             startActivity(Intent(this, EditProfileActivity::class.java))
@@ -125,7 +140,7 @@ class ProfileActivity : AppCompatActivity() {
             }
         } else if (isSuccess == "3") {
             AlertDialog.Builder(this).apply {
-                setTitle("Upload story gagal!!")
+                setTitle("Upload profile gagal!!")
                 setMessage("Silakan coba lagi.")
                 create()
                 show()
