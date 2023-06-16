@@ -1,0 +1,3 @@
+# mobile-tolong
+
+Tolong! adalah aplikasi darurat perjalanan di lingkup domestik Indonesia. Aplikasi Tolong! akan siap siaga membantu Anda ketika terjadi kecelakaan yang tidak diinginkan. Tolong! akan memberikan lokasi ambulance, pemadam kebarakan, dan polisi terdekat dari lokasi Anda. Keunggulan dari aplikasi ini adalah, Anda bisa mengambil gambar jika terjadi luka pada kulit anda. Tolong! dapat memberitahu tipe luka seperti apa dan bagaimana cara menanggulanginya dengan baik serta mengikuti prosedur sebagaimana seharusnya dari rumah sakit selagi menunggu bantuan profesional datang. Aplikasi ini akan memberikan kemudahan untuk memberikan bantuan dalam keadaan darurat Anda.
