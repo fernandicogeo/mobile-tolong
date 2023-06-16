@@ -66,7 +66,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.cardEmergency.setOnClickListener {
-            startActivity(Intent(this, CameraEmergencyActivity::class.java))
+            if (!allPermissionsGranted()) {
+                ActivityCompat.requestPermissions(
+                    this,
+                    REQUIRED_PERMISSIONS,
+                    REQUEST_CODE_PERMISSIONS
+                )
+            } else startActivity(Intent(this, CameraEmergencyActivity::class.java))
         }
     }
 
