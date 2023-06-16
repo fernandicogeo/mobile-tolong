@@ -16,12 +16,12 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import com.example.tolong.R
 import com.example.tolong.databinding.ActivityCameraBinding
 import com.example.tolong.helper.createFile
 import com.example.tolong.helper.uriToFile
 
 class CameraActivity : AppCompatActivity() {
+
     private var imageCapture: ImageCapture? = null
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
     private lateinit var openGalleryLauncher: ActivityResultLauncher<Intent>
@@ -31,6 +31,7 @@ class CameraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         initGallery()
 
@@ -79,6 +80,7 @@ class CameraActivity : AppCompatActivity() {
     private fun captureImage() {
         val imageCapture = imageCapture ?: return
         val photoFile = createFile(application)
+
         val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
         imageCapture.takePicture(
             outputOptions,
@@ -105,6 +107,8 @@ class CameraActivity : AppCompatActivity() {
                 }
             }
         )
+
+
     }
 
     private fun startCamera() {

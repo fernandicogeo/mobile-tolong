@@ -4,8 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.tolong.R
-import com.example.tolong.databinding.ActivityAmbulanceCallBinding
 import com.example.tolong.databinding.ActivityFirefighterCallBinding
 import com.example.tolong.ui.MainActivity
 

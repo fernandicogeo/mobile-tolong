@@ -9,17 +9,12 @@ import android.util.Log
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
-import com.example.tolong.R
 import com.example.tolong.databinding.ActivityEditProfileBinding
-import com.example.tolong.databinding.ActivityLoginBinding
 import com.example.tolong.model.EditModel
-import com.example.tolong.model.LoginModel
 import com.example.tolong.model.UserModel
 import com.example.tolong.preferences.UserPreference
 import com.example.tolong.repository.ResultCondition
-import com.example.tolong.ui.MainActivity
 import com.example.tolong.viewmodel.EditViewModel
-import com.example.tolong.viewmodel.LoginViewModel
 import com.example.tolong.viewmodel.ViewModelFactoryAuth
 
 class EditProfileActivity : AppCompatActivity() {

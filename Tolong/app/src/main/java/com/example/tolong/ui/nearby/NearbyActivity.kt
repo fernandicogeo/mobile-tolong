@@ -20,16 +20,13 @@ import com.example.tolong.R
 import com.example.tolong.databinding.ActivityNearbyBinding
 import com.example.tolong.helper.parseAddressLocation
 import com.example.tolong.helper.parseAddressProvince
-import com.example.tolong.helper.readJsonFromAssets
 import com.example.tolong.model.SearchModel
 import com.example.tolong.repository.ResultCondition
 import com.example.tolong.ui.MainActivity
 import com.example.tolong.ui.firstaid.CameraActivity
 import com.example.tolong.ui.profile.ProfileActivity
 import com.example.tolong.ui.setting.SettingActivity
-import com.example.tolong.viewmodel.LoginViewModel
 import com.example.tolong.viewmodel.NearbyViewModel
-import com.example.tolong.viewmodel.ViewModelFactoryAuth
 import com.example.tolong.viewmodel.ViewModelFactoryNearby
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices

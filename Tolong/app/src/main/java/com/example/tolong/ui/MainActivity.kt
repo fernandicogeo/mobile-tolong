@@ -18,6 +18,7 @@ import com.example.tolong.databinding.ActivityMainBinding
 import com.example.tolong.ui.call.AmbulanceCallActivity
 import com.example.tolong.ui.call.FirefighterCallActivity
 import com.example.tolong.ui.call.PoliceCallActivity
+import com.example.tolong.ui.call.emergency.CameraEmergencyActivity
 import com.example.tolong.ui.firstaid.CameraActivity
 import com.example.tolong.ui.nearby.NearbyActivity
 import com.example.tolong.ui.profile.ProfileActivity
@@ -62,6 +63,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.cardFirefighter.setOnClickListener {
             startActivity(Intent(this, FirefighterCallActivity::class.java))
+        }
+
+        binding.cardEmergency.setOnClickListener {
+            startActivity(Intent(this, CameraEmergencyActivity::class.java))
         }
     }
 

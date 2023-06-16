@@ -7,7 +7,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.tolong.model.AmbulanceModel
 import com.example.tolong.model.FireDepModel
 import com.example.tolong.model.PoliceModel
-import com.example.tolong.ui.call.FirefighterCallActivity
 import java.io.Serializable
 
 class SectionPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {

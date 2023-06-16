@@ -1,12 +1,9 @@
 package com.example.tolong.repository.nearby
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.example.tolong.api.nearby.ApiServiceNearby
 import com.example.tolong.api.nearby.SearchRequest
-import com.example.tolong.model.LoginModel
-import com.example.tolong.model.RegisterModel
 import com.example.tolong.model.SearchModel
 import com.example.tolong.preferences.UserPreference
 import com.example.tolong.repository.ResultCondition

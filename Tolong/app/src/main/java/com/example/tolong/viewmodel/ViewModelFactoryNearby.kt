@@ -4,7 +4,6 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.tolong.helper.Injection
-import com.example.tolong.repository.auth.RepositoryAuth
 import com.example.tolong.repository.nearby.RepositoryNearby
 
 class ViewModelFactoryNearby private constructor(private val repository: RepositoryNearby) : ViewModelProvider.NewInstanceFactory() {

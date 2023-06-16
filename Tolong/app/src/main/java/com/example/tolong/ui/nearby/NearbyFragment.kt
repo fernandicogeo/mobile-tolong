@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tolong.R
 import com.example.tolong.databinding.FragmentNearbyBinding
-import com.example.tolong.helper.readJsonFromAssets
 import com.example.tolong.model.AmbulanceModel
 import com.example.tolong.model.FireDepModel
 import com.example.tolong.model.PoliceModel

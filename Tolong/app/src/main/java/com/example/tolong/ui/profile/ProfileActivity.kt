@@ -4,7 +4,6 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,13 +14,10 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.bumptech.glide.request.target.Target
 import com.example.tolong.R
-import com.example.tolong.databinding.ActivityMainBinding
 import com.example.tolong.databinding.ActivityProfileBinding
 import com.example.tolong.preferences.UserPreference
 import com.example.tolong.ui.MainActivity
-import com.example.tolong.ui.call.AmbulanceCallActivity
 import com.example.tolong.ui.firstaid.CameraActivity
 import com.example.tolong.ui.nearby.NearbyActivity
 import com.example.tolong.ui.setting.SettingActivity

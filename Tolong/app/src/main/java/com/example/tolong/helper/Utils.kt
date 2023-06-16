@@ -110,14 +110,3 @@ fun parseAddressProvince(
         "Province Unknown"
     }
 }
-
-fun readJsonFromAssets(context: Context, fileName: String): JSONObject? {
-    val jsonString: String?
-    try {
-        jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
-        return JSONObject(jsonString)
-    } catch (ioException: IOException) {
-        ioException.printStackTrace()
-    }
-    return null
-}

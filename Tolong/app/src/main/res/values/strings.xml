@@ -29,7 +29,7 @@
     <string name="gallery_image">Gallery Image</string>
     <string name="tipe_luka">Tipe Luka</string>
     <string name="result">Result</string>
-    <string name="dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="dummy">Tolong! adalah aplikasi darurat perjalanan di lingkup domestik Indonesia. Aplikasi Tolong! akan siap siaga membantu Anda ketika terjadi kecelakaan yang tidak diinginkan. Tolong! akan memberikan lokasi ambulance, pemadam kebarakan, dan polisi terdekat dari lokasi Anda. Keunggulan dari aplikasi ini adalah, Anda bisa mengambil gambar jika terjadi luka pada kulit anda. Tolong! dapat memberitahu tipe luka seperti apa dan bagaimana cara menanggulanginya dengan baik serta mengikuti prosedur sebagaimana seharusnya dari rumah sakit selagi menunggu bantuan profesional datang. Aplikasi ini akan memberikan kemudahan untuk memberikan bantuan dalam keadaan darurat Anda.</string>
     <string name="penanggulangan">Penanggulangan</string>
     <string name="lokasi">Lokasi Anda</string>
     <string name="profile_image">Profile Image</string>
@@ -42,10 +42,12 @@
     <string name="logout">Logout</string>
     <string name="small_password">Teks harus berjumlah minimal 8 digit</string>
     <string name="gambar">Gambar Luka</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_address">Jl. Mayor Rusdi 2 No.2981</string>
     <string name="dummy_nohp">0893183930</string>
     <string name="click">Klik untuk menelfon</string>
     <string name="detail_password">Kosongkan password jika ingin menggunakan password yang sama</string>
+    <string name="emergency">Emergency</string>
+    <string name="gambar_kejadian">Gambar kejadian</string>
+    <string name="deteksi">Hasil Deteksi</string>
 </resources>
